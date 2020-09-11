@@ -1,0 +1,1088 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .list-statistic, .menu li a
+    font-size: 12px
+
+  .btn-sale
+    max-width: 80px
+    margin: 0 20px 0 0
+
+  .list-statistic__value
+    width: 57px
+
+  .specialists-promo
+    max-width: 540px
+
+  .specialists-new
+    width: calc(100% - 540px)
+
+  .salons-promo
+    max-width: 340px
+
+  .salons-new
+    width: calc(100% - 340px)
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1160px)
+  .specialists-promo
+    max-width: none
+    padding: 0
+    margin: 25px 0 0
+    h2
+      text-align: center
+
+  .specialists-new
+    width: 100%
+    padding: 0
+
+  .specialist-card
+    max-width: none
+    height: 181px
+
+  .box-card
+    margin: 0 0 20px
+
+  .specialists-new__wrapper
+    .slide
+      width: 49%
+
+  .specialist-card-max
+    max-width: none
+    height: 412px
+
+  .specialists
+    padding: 45px 0 0
+
+  .banner-img
+    max-height: none
+
+  .private-masters-card
+    height: 310px
+    width: 49%
+
+  .salons-card-max
+    height: 314px
+    .box-card__top
+      width: 334px
+    .box-card__center
+      width: calc(100% - 334px)
+      margin: 0
+      padding: 0 0 0 20px
+
+  .massage-salons-card
+    height: 417px
+
+  .footer-box
+    max-width: 300px
+
+  .section-specialists-promo__card
+    margin: 23px 20px 30px 0
+
+  .line-rating .line
+    width: 240px
+
+  .reviews-general
+    .list-stars
+      margin: 0 20px 0 0
+
+  .reviews-general__right
+    max-width: 189px
+    .list
+      font-size: 14px
+
+@media only screen and (max-width : 1060px)
+  .btn-burger
+    display: flex
+
+  header
+    .box-location
+      margin: 0 76px 0 auto
+    .list-statistic, .btn-sale, .menu
+      display: none
+
+  .cabinet-links
+    margin: 0
+
+  .header-top
+    padding: 15px 0
+
+  .header-bottom
+    padding: 25px 0
+
+  main
+    &:after
+      bottom: -178px
+      right: auto
+      left: 598px
+
+  .header
+    .header-top
+      display: block
+    .header-bottom
+      .cabinet-links, .box-location
+        display: none
+    .cabinet-links
+      margin: 0
+
+  .fixed
+    top: 120px
+
+  .about-company__logo
+    width: 300px
+    height: 300px
+
+  .about-company__info
+    width: calc(100% - 300px)
+    .list-characteristics-specialist, .list-rating
+      font-size: 14px
+      li
+        margin: 0 0 12px
+        &:last-child
+          margin: 0 0 12px
+    .name
+      margin: 0 0 16px
+      font-size: 20.5px
+
+  .list-social
+    margin: 15px 0 20px
+
+  .page-wrapper__card
+    padding: 37px 0 0
+    .breadcrumbs
+      margin: 0 0 46px
+
+  .wrapper
+    padding: 117px 0 0
+
+@media only screen and (max-width : 1040px)
+  .reviews-general__right
+    max-width: none
+    margin: 20px 0 0
+    .list
+      li
+        text-align: left
+
+@media only screen and (max-width : 992px)
+  main
+    padding: 41px 0 51px
+
+  .banner-wrap
+    flex-direction: column
+    align-items: flex-start
+    &:before
+      right: auto
+      left: 245px
+
+  .banner-content
+    width: 100%
+    padding: 44px 55px 43px
+
+  .banner-img
+    width: 100%
+    height: 243px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .attention
+    height: auto
+    padding: 16px 40px 20px
+    line-height: 1.33
+
+  footer
+    padding: 44px 0 50px
+    font-size: 14px
+
+  .footer-box
+    max-width: 250px
+    p
+      a
+        display: inline
+
+  .page-wrapper__card
+    .sidebar
+      display: none
+    .page-content
+      padding: 0
+      width: 100%
+
+  .reviews-general__right
+    max-width: 189px
+    margin: 0
+    .list
+      li
+        text-align: right
+
+@media only screen and (max-width : 900px)
+  .category-services
+    padding: 37px 30px 40px
+
+  .description-title
+    margin: 18px 0 33px
+    font-size: 18px
+
+  .list-category
+    li
+      width: 33%
+      display: none
+      &:nth-child(-n+12)
+        display: none
+      &:nth-child(-n+9)
+        display: block
+
+  .list-characteristics-specialist
+    font-size: 13px
+
+  .specialist-card-max
+    .list-characteristics-specialist
+      font-size: 14px
+
+  .about-masters
+    .about-company__logo
+      width: 162px
+      height: 241px
+
+    .about-company__info
+      padding: 0 0 0 20px
+      width: calc(100% - 162px)
+    .certificate-check, .phone-wrapper
+      margin: 0 0 10px
+      font-size: 14px
+    .phone-wrapper .phone strong
+      font-size: 18px
+      .btn-phone
+        font-size: 16px
+        max-width: 148px
+        min-width: 148px
+
+
+  .about-company__bottom .list-characteristics-specialist, .education .certificate-check
+    font-size: 14px
+
+  .about-company__bottom .list-social
+    margin: 0 20px 0 0
+    li
+      margin: 0 17px 0 0
+      a
+        width: 28px
+        height: 28px
+
+  .about-masters__contacts-box .certificate-check
+    font-size: 14.5px
+
+  .about-masters .about-company__info .list-rating li, .about-masters .about-company__info .list-characteristics-specialist li
+    margin: 0 0 7px
+
+@media only screen and (max-width : 800px)
+  .private-masters-card
+    .list-characteristics-specialist, .certificate-check
+      font-size: 13px
+    .certificate-check
+      .icon
+        width: 17px
+        height: 17px
+    .name-specialist
+      font-size: 16.5px
+
+  .box-experience .links-accent
+    font-size: 14px
+
+  .salons-card
+    .list-characteristics-specialist
+      font-size: 13px
+    .name-specialist
+      font-size: 16.5px
+
+  .salons-card-max
+    .list-characteristics-specialist
+      font-size: 14px
+    .name-specialist
+      font-size: 17.5px
+
+  .sale-box
+    width: 269px
+    height: 301px
+    .list-characteristics-specialist
+      font-size: 14px
+
+  .sale-box__photo
+    height: 229px
+
+  .massage-salons-card
+    .box-experience a
+      font-size: 13px
+
+
+  .footer-box
+    max-width: 205px
+
+  .sidebar
+    display: none
+
+  .page-content
+    width: 100%
+    padding: 0
+
+  .btn-filter
+    display: flex
+
+  .section-specialists-promo__card
+    margin: 23px 10px 30px 0
+
+  .specialist-line__wrap .name-specialist
+    font-size: 17.5px
+
+  .specialist-line__wrap .list-characteristics-specialist, .specialist-line__wrap .box-experience .links-accent, .specialist-line__wrap .certificate-check
+    font-size: 13px
+
+  .about-company__logo
+    width: 241px
+    height: 241px
+
+  .about-company__info
+    width: calc(100% - 241px)
+    padding: 0 0 0 22px
+    .btn
+      max-width: 222px
+      height: 50px
+      font-size: 16px
+    .list-characteristics-specialist li, .about-company__info .list-rating li
+      margin: 0 0 10px
+      &:last-child
+        margin: 0 0 10px
+    .name
+      margin: 0 0 13px
+
+  .list-social
+    margin: 14px 0 15px
+    li
+      margin: 0 17px 0 0
+      a
+        width: 28px
+        height: 28px
+
+  .about-company__contacts
+    margin: 28px 0 40px
+
+  .address
+    font-size: 13px
+
+  .services-company .box-experience, .services-company .list-characteristics-specialist
+    font-size: 14px
+
+  .load-more
+    font-size: 15.5px
+
+  .about-masters .phone-wrapper .phone strong .btn-phone
+    height: 33px
+    font-size: 16px
+
+
+@media only screen and (max-width : 768px)
+  h1
+    font-size: 30px
+
+  .private-masters-card
+    display: none
+    &:nth-child(-n+4)
+      display: flex
+
+  .private-masters, .massage-salons
+    padding: 45px 0
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 700px)
+  .btn
+    font-size: 14px
+    max-width: 268px
+    height: 37px
+
+  .logo
+    max-width: 321px
+
+  .private-masters-card
+    height: 319px
+    .list-characteristics-specialist
+      font-size: 13px
+      li
+        margin: 0 0 5px
+
+  .salons-card-max
+    height: auto
+    .box-card__top
+      width: 100%
+      flex-direction: row
+      align-items: flex-start
+      margin: 0 0 22px
+    .box-card__photo
+      margin: 0
+      width: 130px
+      height: 130px
+    .box-card__top-info
+      width: calc(100% - 130px)
+      padding: 0 0 0 20px
+      .list-characteristics-specialist
+        flex-direction: column
+        align-items: flex-start
+        li
+          margin: 0 0 15px
+          &:last-child
+            display: flex
+    .box-card__center
+      width: 100%
+      padding: 0
+      .list-characteristics-specialist
+        font-size: 13px
+        li
+          &:last-child
+            display: none
+
+  .btn-filter
+    max-width: 130px
+
+  .about-company__contacts, .about-company, .gallery, .document, .specialist-company, .services-company, .education
+    padding: 0 20px
+
+  .card-company__wrapper
+    padding: 20px 0 0
+
+  .phone-wrapper
+    .phone
+      flex-direction: column
+      align-items: flex-start
+      width: 100%
+      strong
+        margin: 0
+        width: 100%
+      p
+        font-size: 14px
+    a
+      max-width: 121px
+      min-width: auto
+      font-size: 13.5px
+      height: 26px
+
+  .list-message
+    width: 100%
+    justify-content: center
+    margin: 15px 0 0
+
+  .about-company__contacts-box
+    padding: 13px 12px 18px
+    &:before
+      left: 9px
+      top: 17px
+
+  .address
+    padding: 0 0 0 12px
+
+  .reviews-general
+    padding: 0 20px 24px
+
+  .reviews-general__right
+    max-width: none
+    margin: 39px 0 0
+    .btn
+      margin: 0 auto
+      max-width: 280px
+    .list
+      margin: 24px 0 0
+      li
+        text-align: center
+
+  .list-stars
+    margin: 0 12px 0 0
+    li
+      width: 12px
+      height: 12px
+      margin: 0 5px 0 0
+      &:last-child
+        margin: 0
+
+  .line-rating .line
+    width: 163px
+
+  .line-rating .line .line-bg
+    width: 119px
+
+  .line-rating .line .line-bg25
+    width: 130px
+
+  .line-rating .line .line-bg20
+    width: 149px
+
+  .line-rating .line .line-bg10
+    width: 43px
+
+  .line-rating .line .line-bg1
+    width: 20px
+
+  .line-rating .val
+    font-size: 13px
+    margin: 0 0 0 10px
+
+  .reviews-general .list-stars
+    margin: 0 12px 0 0
+
+  .about-masters__contacts-box
+    padding: 0
+
+@media only screen and (max-width : 670px)
+  .private-masters-card
+    width: 100%
+
+  .salons-card
+    .box-card__top
+      width: 63px
+    .box-card__photo
+      height: 63px
+    .box-card__center
+      width: calc(100% - 63px)
+
+  .massage-salons-card
+    height: auto
+
+
+@media only screen and (max-width : 630px)
+  .header-bottom
+    padding: 5px 0 26px
+    .container
+      flex-direction: column
+      align-items: center
+    .btn
+      margin: 0 0 0 auto
+
+  .logo
+    order: 1
+    margin: 24px auto 0
+
+  .header-top, .header .header-top
+    display: none
+
+  .list-category li
+    width: 50%
+
+  .about-company__info
+    width: 100%
+    padding: 0
+    margin: 25px 0 0
+    .name
+      text-align: center
+      font-size: 20.5px
+    .list-characteristics-specialist
+      li
+        text-align: center
+        justify-content: center
+    .btn
+      margin: 0 auto
+      max-width: 280px
+
+  .about-company__logo, .about-masters .about-company__logo
+    width: 100%
+    height: 280px
+
+  .list-social
+    justify-content: center
+    margin: 21px 0 27px
+
+  .page-wrapper__card
+    padding: 29px 0 0
+    .breadcrumbs
+      margin: 0 0 27px
+
+  .wrapper
+    padding: 97px 0 0
+
+  .about-masters .about-company__info
+    width: 100%
+    padding: 0
+
+  .about-masters .phone-wrapper .phone strong
+    .btn-phone
+      margin: 0 0 0 5px
+
+  .about-masters
+    .line-title
+      h3
+        width: 100%
+        text-align: center
+      .certificate-check
+        width: auto
+        margin: 0 0 0 auto
+      .status-professional
+        margin: 0
+
+  .about-company__bottom
+    flex-direction: column
+    align-items: center
+    margin: 26px 0 0
+    .list-social
+      margin: 0 0 19px
+    .list-characteristics-specialist
+      li
+        text-align: center
+        justify-content: center
+
+
+@media only screen and (max-width : 575px)
+  .interview-box
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    max-width: 223px
+    height: 440px
+    margin: 20px 20px 35px 0
+    .name-specialist
+      font-size: 16.5px
+    .text
+      font-size: 13px
+      p
+        display: block
+        max-height: 77px
+        overflow: hidden
+
+  .interview-box__left
+    width: 100%
+    margin: 0 0 20px
+
+  .interview-box__photo
+    width: 100%
+    margin: 0 0 16px
+    height: 183px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .interview-box__right
+    padding: 0
+    width: 100%
+
+@media only screen and (max-width : 520px)
+  .specialists-new__wrapper, .slick-list, .slick-slider
+    display: block
+    .slide
+      width: auto
+
+  .specialists-new__wrapper
+    .slick-list
+      padding: 0 30px
+      margin: 0 0 0 -30px
+
+  .specialist-card
+    width: 235px
+    height: 191px
+    margin: 0 20px 30px 0
+
+  .name-specialist
+    font-size: 14px
+
+  .specialists
+    padding: 38px 0 0
+    h2
+      text-align: center
+
+  .specialists-promo
+    margin: 17px 0 0
+
+  .specialist-card-max
+    height: 563px
+    width: 100%
+    align-items: flex-start
+    .box-card__top
+      flex-direction: row
+      align-items: flex-start
+      width: 100%
+    .box-card__photo
+      width: 130px
+      height: 130px
+      margin: 0
+    .box-card__center
+      width: 100%
+      padding: 0
+    .list-characteristics-specialist
+      font-size: 13px
+    .name-specialist
+      font-size: 17.5px
+
+  .box-card__top-info
+    padding: 0 0 0 19px
+    width: calc(100% - 130px)
+
+  .box-experience .links-accent, .certificate-check, .list-characteristics-specialist .certificate-check
+    font-size: 13px
+
+  .banner
+    margin: 32px 0 52px
+    h2
+      font-size: 20px
+
+  .banner-content
+    padding: 20px 20px 34px
+    .btn
+      font-size: 18px
+      height: 56px
+
+  .banner-wrap:before
+    left: 123px
+
+  .private-masters-card
+    width: 100%
+    height: 319px
+    max-width: none
+    margin: 0 0 20px
+    .box-card__top
+      width: 69px
+      flex-direction: column
+      align-items: flex-start
+      .box-card__photo
+        width: 100%
+        height: 102px
+        margin: 0 0 25px
+    .box-card__center
+      padding: 0 0 0 19px
+      width: calc(100% - 69px)
+    .name-specialist
+      font-size: 16.5px
+
+  .salons-card-max
+    height: auto
+    .name-specialist
+      font-size: 16.5px
+
+  .salons-card
+    width: 235px
+    height: 153px
+    .name-specialist
+      font-size: 13.5px
+    .list-characteristics-specialist
+      font-size: 13px
+
+  .sale
+    padding: 48px 0 30px
+
+  .sale-box
+    width: 226px
+    height: 257px
+    margin: 25px 20px 35px 0
+
+  .sale-box__photo
+    height: 186px
+    margin: 0 0 13px
+
+  .name-salon
+    font-size: 15px
+
+  .sale-size
+    width: 120px
+    height: 39px
+    padding: 8px 10px 7px
+    font-size: 11px
+
+  .massage-salons-card
+    height: auto
+    .box-card__top
+      width: 100%
+      flex-direction: row
+      align-items: flex-start
+      .box-card__photo
+        margin: 0
+        width: 118px
+        height: 118px
+    .box-card__info
+      width: calc(100% - 118px)
+    .box-card__center
+      padding: 0
+      width: 100%
+    .btn
+      font-size: 16px
+      height: 45px
+
+  .massage-salons .btn
+    height: 56px
+    max-width: 320px
+    font-size: 18px
+
+  footer
+    padding: 44px 0 47px
+    .container
+      flex-direction: column
+      align-items: center
+
+  .footer-box
+    text-align: center
+    font-size: 13px
+    max-width: 215px
+    margin: 0 auto 30px
+    &:last-child
+      margin: 0
+
+  .attention
+    font-size: 20px
+    line-height: 1.5
+    letter-spacing: 2px
+    padding: 27px 35px
+    margin: 0 0 34px
+
+  .section-specialists-promo__card
+    width: 247px
+    height: 182px
+    .box-card__photo
+      width: 70px
+      height: 70px
+    .box-card__info
+      width: calc(100% - 70px)
+    .name-specialist
+      font-size: 14px
+
+  .breadcrumbs li a
+    font-size: 13px
+
+  .title-page
+    font-size: 22px
+
+  .specialist-line__wrap
+    .name-specialist
+      width: 100%
+      font-size: 15px
+      margin: 0 0 6px
+
+  .status-professional
+    margin: 0 auto 0 0
+    font-size: 13.5px
+
+  .d-mobile
+    display: flex
+    margin: 0 0 5px
+
+  .specialist-line__wrap-right
+    width: 100%
+    padding: 0
+    .line-title
+
+      display: none
+
+  .specialist-line__wrap-left
+    width: 100%
+    display: flex
+    align-items: flex-start
+    margin: 0 0 10px
+    .photo
+      width: 63px
+      height: 63px
+      margin: 0
+
+  .specialist-line__wrap-left__top
+    width: calc(100% - 63px)
+    padding: 0 0 0 20px
+    .list-characteristics-specialist
+      flex-direction: row
+      display: flex
+      align-items: center
+      justify-content: space-between
+      li
+        margin: 0
+
+  .specialist-line__wrap-bottom .btn
+    font-size: 13px
+    height: 43px
+    max-width: 130px
+
+  .certificate-box
+    width: 65px
+    height: 65px
+
+  .certificate-slider
+    padding: 0 30px
+    .slick-arrow
+      width: 15px
+      height: 37px
+
+  .specialist-line__wrap-hidden
+    padding: 18px 19px
+
+  .list-message li a
+    width: 28px
+    height: 28px
+
+  .additional-info
+    font-size: 14px
+
+  .gallery-box, .document-box
+    width: 100px
+    height: 100px
+
+  .specialist-company__box
+    height: 216px
+    font-size: 12px
+
+  .services-company .box-experience, .services-company .list-characteristics-specialist
+    font-size: 13px
+
+  .review-box__wrap
+    padding: 21px 20px 26px
+    font-size: 14px
+    line-height: 1.43
+
+  .review-box__right
+    width: 100%
+    padding: 0
+    margin: 17px 0 0
+
+
+  .review-box__left
+    .date
+      font-size: 13px
+
+  .answer-box
+    margin: 30px 0 0
+    padding: 23px 22px 20px
+
+
+  .load-more-btn
+    font-size: 15.5px
+    padding: 20px
+
+
+@media only screen and (max-width : 480px)
+  .category-services, .banner-img
+    display: none
+
+  main
+    padding: 48px 0 43px
+
+  h1
+    font-size: 23px
+
+  h2
+    font-size: 22px
+    line-height: normal
+
+  .description-title
+    margin: 29px 0 33px
+    font-size: 16px
+
+  .btn-services
+    display: flex
+    height: 63px
+    max-width: none
+    margin: 0 auto
+    font-size: 18px
+
+  main:after
+    left: 210px
+
+  main:before
+    bottom: auto
+    top: 133px
+    right: 127px
+    left: auto
+
+  .list-characteristics-specialist .icon
+    min-width: 18px
+
+  .interview
+    padding: 45px 0 27px
+
+  .private-masters .btn
+    max-width: 321px
+    font-size: 18px
+    height: 56px
+
+  .private-masters-card
+    .btn
+      max-width: none
+      font-size: 16px
+      height: 45px
+
+  .specialists
+    padding: 0
+
+  .mobile-menu__fixed
+    display: flex
+
+  .specialist-line__wrap-left__top .list-characteristics-specialist li
+    span
+      display: none
+
+  .specialist-line__wrap
+    margin: 0 0 20px
+
+  .line-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .title-page
+    margin: 0 0 18px
+
+  .pagination
+    margin: 30px 0 45px
+    li
+      &:first-child, &:last-child
+        margin: 0
+
+  .education .certificate-check
+    font-size: 14px
+    .icon
+      margin: 0 17px 0 0
+      min-width: 17px
+      width: 17px
+      height: 17px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 370px)
+  .btn
+    max-width: 250px
+
+  .btn-filter
+    max-width: 130px
+
+  .status-professional
+    font-size: 12px
+    padding: 2px 7px
+
+  .specialist-line__wrap-bottom .btn
+    max-width: 120px
+
+  .certificate-slider
+    padding: 0 25px
+
+  .pagination li a
+    padding: 4px 8px
+
+  .phone-wrapper .phone strong
+    font-size: 16px
+
+  .phone-wrapper a
+    max-width: 110px
+    font-size: 13px
+
+  .line-rating .line
+    width: 120px
+
+  .about-masters .phone-wrapper .phone strong .btn-phone
+    max-width: 125px
+    min-width: 125px
+    font-size: 14px
+
+  .line-rating .line .line-bg
+    width: 60px
+
+  .line-rating .line .line-bg25
+    width: 90px
+
+  .line-rating .line .line-bg20
+    width: 85px
+
+  .line-rating .line .line-bg10
+    width: 70px
+
+  .line-rating .line .line-bg1
+    width: 10px

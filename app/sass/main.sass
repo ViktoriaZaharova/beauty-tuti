@@ -1,0 +1,2325 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-size: 15px
+  background: #f3f7f9
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+  box-sizing: border-box
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+    color: #4e646d
+    outline: none
+
+
+input, select, textarea
+  outline: none
+  box-shadow: none
+  width: 100%
+  border: none
+    radius: 0
+  box-sizing: border-box
+  font-family: $default-font
+  padding: 0
+
+
+button
+  cursor: pointer
+  border: none
+    radius: 0
+  outline: none
+  box-sizing: border-box
+  transition: .3s ease
+  padding: 0
+  margin: 0
+  box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  text-align: center
+  justify-content: center
+  border-radius: 6px
+  height: 46px
+  width: 100%
+  max-width: 300px
+  font-size: 15px
+
+.btn-accent
+  border-radius: 6px
+  color: #fff
+  background: #d859a2
+  &:hover
+    background: #e35dab
+    color: #fff
+
+.btn-blue
+  background: #6597f3
+  border-radius: 3px
+  color: #fff
+  &:hover
+    background: #c7f7a7
+    color: #000
+
+.btn-border
+  border-radius: 6px
+  border: solid 1px #f17070
+  color: #f17070
+  &:hover
+    background: #f17070
+    color: #fff
+
+.btn-green
+  border-radius: 6px
+  background-color: #c7f7a7
+  max-width: 129px
+  color: #608647
+
+.container
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  padding: 0 20px
+  z-index: 1
+
+.bg-blue
+  background: #529fba
+
+.bg-white
+  background: #fff
+
+.color-white
+  color: #fff
+
+.color-green
+  color: #a6c133
+
+.links-accent
+  color: #529fba
+
+h1
+  width: 100%
+  font-size: 35px
+  font-weight: 500
+  line-height: 1.11
+  .city
+    color: #c4f0ff
+
+h2
+  font-size: 25px
+  font-weight: 500
+  width: 100%
+  color: #4e646d
+  line-height: 1.56
+  margin: 0 0 28px
+
+.description-title
+  text-align: center
+  width: 100%
+  margin: 24px auto 35px
+  font-size: 22px
+
+
+
+//header
+header
+  background: #fff
+
+.header-top
+  padding: 9px 0
+  border-bottom: 1px solid #e3ebef
+  .container
+    justify-content: space-between
+    align-items: center
+
+.btn-place
+  margin: 0 30px
+
+.cabinet-links
+  display: flex
+  align-items: center
+  color: #529fba
+  font-size: 15px
+  font-weight: 500
+  background: #dae4e9
+  height: 46px
+  width: 100%
+  max-width: 86px
+  border-radius: 6px
+  justify-content: center
+  text-align: center
+  .icon
+    width: 19px
+    height: 17px
+    margin: 0 10px 0 0
+  &:hover
+    color: #000
+
+.box-location
+  display: flex
+  align-items: center
+  color: #000000
+  .icon
+    width: 13px
+    height: 17px
+    margin: 0 11px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+  a
+    display: inline
+    color: #000
+    margin: 0 0 0 5px
+    font-weight: normal
+    &:hover
+      color: #000
+    span
+      color: #7d8c92
+
+.list-statistic
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  color: #7d8c92
+  font-size: 14px
+  li
+    display: flex
+    align-items: center
+    margin: 0 26px 0 0
+
+.list-statistic__value
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  text-align: center
+  width: 61px
+  height: 29px
+  margin: 0 0 0 7px
+  padding: 0 9px 0 0
+  color: #4e646d
+  background: url("../img/figure-bg.png") no-repeat center
+    size: contain
+
+//header-bottom
+.header-bottom
+  padding: 45px 0
+  .container
+    justify-content: space-between
+    align-items: center
+  .btn-sale
+    margin: 0 30px 0 0
+
+.logo
+  width: 100%
+  max-width: 350px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.btn-sale
+  max-width: 110px
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto
+  li
+    margin: 0 27px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #4e646d
+      font-size: 17px
+      &:hover
+        color: #000
+
+//main
+main
+  position: relative
+  padding: 42px 0
+  &:before, &:after
+    content: ''
+    background: url("../img/figure-circle.png") no-repeat center
+      size: contain
+    position: absolute
+  &:before
+    width: 621px
+    height: 621px
+    bottom: -420px
+    left: -187px
+  &:after
+    width: 1093px
+    height: 1093px
+    bottom: -170px
+    right: -331px
+  h1
+    text-align: center
+
+.category-services
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 37px 54px 40px
+  border: solid 1px #76b8cf
+    radius: 6px
+  .links
+    margin: 24px auto 0
+
+.list-category
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  li
+    width: 25%
+    margin: 0 0 15px
+    display: none
+    &:nth-child(-n+12)
+      display: block
+    a
+      color: #fff
+      &:hover
+        color: #4e646d
+
+.links
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #fff
+  &:hover
+    color: #a6c133
+
+.load-more
+  .icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 21px
+    height: 21px
+    background: #a6c133
+    border-radius: 50%
+    margin: 0 12px 0 0
+    transition: .3s ease
+
+.load-more.trigger
+  .icon
+    transform: rotate(180deg)
+
+//banner
+.banner
+  position: relative
+  margin: 32px 0 62px
+  h2
+    color: #fff
+    font-size: 30px
+    line-height: 1.5
+
+.banner-wrap
+  width: 100%
+  display: flex
+  border-radius: 3px
+  align-items: stretch
+  justify-content: space-between
+  overflow: hidden
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 245px
+    width: 648px
+    height: 648px
+    background: url("../img/figure-circle.png") no-repeat center
+      size: contain
+    top: -95px
+
+.banner-content
+  position: relative
+  z-index: 1
+  padding: 35px 20px 34px 55px
+  .btn
+    font-size: 23px
+    height: 56px
+    max-height: 315px
+
+.banner-img
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 586px
+  max-height: 243px
+  position: relative
+  z-index: 1
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+//specialists
+.specialists
+  padding: 52px 0 0
+  .container
+    justify-content: space-between
+    align-items: stretch
+
+.specialists-promo
+  max-width: 570px
+  width: 100%
+
+.specialists-new
+  width: calc(100% - 570px)
+  padding: 0 30px 0 0
+
+.specialists-new__wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
+.box-card
+  background: #fff
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  border-radius: 6px
+  width: 100%
+  overflow: hidden
+  margin: 0 0 30px
+  display: flex
+  flex-wrap: wrap
+  transition: .3s ease
+  &:hover
+    transform: translateY(-6px)
+
+.specialist-card
+  max-width: 270px
+  padding: 17px 20px
+  height: 191px
+
+.box-card__photo
+  width: 63px
+  height: 63px
+  overflow: hidden
+  border-radius: 3px
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.box-card__info
+  width: calc(100% - 63px)
+  padding: 0 0 0 18px
+
+.name-specialist
+  color: #529fba
+  font-size: 16px
+  font-weight: 500
+  margin: 0 0 10px
+
+.certificate-check
+  display: flex
+  align-items: center
+  font-size: 13px
+  .icon
+    margin: 0 6px 0 0
+    width: 13px
+    height: 13px
+    min-width: 13px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.box-card__top
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  margin: 0 0 8px
+
+.box-card__top-info
+  width: 100%
+
+.list-characteristics-specialist
+  width: 100%
+  color: #4e646d
+  font-size: 14px
+  li
+    display: flex
+    align-items: center
+    width: 100%
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+  .links-accent
+    display: inline-block
+    color: #529fba
+  span
+    color: #7d8c92
+    display: inline-block
+    margin: 0 5px 0 0
+  .icon
+    margin: 0 8px 0 0
+  .certificate-check
+    font-size: 14px
+    .icon
+      width: 17px
+      height: 17px
+
+.specialist-card-max
+  max-width: none
+  height: 412px
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  display: flex
+  box-shadow: 0 10px 30px 0 rgba(166, 193, 51, 0.4)
+  border: solid 1px #a6c133
+  .box-card__info
+    width: 100%
+  .box-card__top
+    width: 188px
+    margin: 0
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    .certificate-check
+      font-size: 14px
+      margin: 0 0 15px
+      .icon
+        width: 18px
+        height: 18px
+  .box-card__photo
+    width: 100%
+    margin: 0 0 15px
+    border-radius: 0
+    height: 280px
+  .box-card__center
+    width: calc(100% - 188px)
+    padding: 0 0 0 20px
+  .box-card__info
+    padding: 0
+  .name-specialist
+    font-size: 20.5px
+    margin: 0 0 15px
+
+.box-experience
+  margin: 12px 0 0
+  padding: 19px 20px
+  border-radius: 3px
+  background: #f3f7f9
+  width: 100%
+  ul
+    margin: 0 0 13px
+    li
+      width: 100%
+      position: relative
+      justify-content: space-between
+      &:before
+        content: ''
+        position: absolute
+        bottom: 2px
+        left: 0
+        width: 100%
+        height: 1px
+        background: #e8eef0
+      p
+        font-weight: 500
+        position: relative
+        z-index: 1
+        background: #f3f7f9
+        padding: 0 0 0 3px
+      span
+        position: relative
+        z-index: 1
+        background: #f3f7f9
+        margin: 0
+        padding: 0 3px 0 0
+
+
+//interview
+.interview
+  padding: 57px 0 27px
+  h2
+    margin: 0
+
+.w-100
+  width: 100%
+
+.interview-box
+  background: #fff
+  border-radius: 6px
+  width: 470px
+  height: 223px
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  padding: 20px
+  margin: 35px 20px 35px 0
+  transition: .3s ease
+  &:hover
+    transform: translateY(-6px)
+
+.interview-box__photo
+  width: 150px
+  height: 150px
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  border-radius: 3px
+  overflow: hidden
+  margin: 0 0 16px
+  background: #dae3e8
+
+.interview-box__left
+  width: 150px
+
+.interview-box__right
+  width: calc(100% - 150px)
+  padding: 0 0 0 20px
+  .text
+    color: #4e646d
+    font-size: 14px
+    p
+      display: inline
+  .links-accent
+    display: inline
+
+.list-statistic__specialist
+  display: flex
+  align-items: center
+  width: 100%
+  li
+    margin: 0
+
+.slick-slide
+  outline: none
+
+.slick-arrow, .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
+  width: 35px
+  height: 35px
+  border-radius: 50%
+  box-shadow: 0 5px 15px 0 rgba(116, 142, 155, 0.3)
+  background: #ffffff url("../img/arrow-right.png") no-repeat center
+    size: 6px
+  z-index: 1
+  top: 50%
+  position: absolute
+  transform: translate(0,-50%)
+  &:before
+    display: none
+  &:hover, &:focus
+    background: #ffffff url("../img/arrow-right.png") no-repeat center
+      size: 6px
+  span
+    display: none
+
+.slick-next, .owl-carousel .owl-nav button.owl-next
+  right: -17px
+
+.slick-prev, .owl-carousel .owl-nav button.owl-prev
+  left: -17px
+  background: #ffffff url("../img/arrow-left.png") no-repeat center
+    size: 6px
+  &:hover, &:focus
+    background: #ffffff url("../img/arrow-left.png") no-repeat center
+      size: 6px
+
+.slick-disabled.slick-arrow, .owl-carousel .owl-nav button.owl-next.disabled, .owl-carousel .owl-nav button.owl-prev.disabled
+  opacity: 0
+  visibility: hidden
+
+//footer
+footer
+  background: #4e646d
+  padding: 44px 0 49px
+  .container
+    justify-content: space-between
+    align-items: flex-start
+
+.attention
+  width: 100%
+  text-align: center
+  font-family: 'BebasNeueLight', sans-serif
+  letter-spacing: 3px
+  text-transform: uppercase
+  color: #adc1ca
+  font-size: 30px
+  padding: 16px
+  border-radius: 3px
+  border: solid 1px #708a94
+  height: 60px
+  margin: 0 0 42px
+
+.footer-box
+  max-width: 344px
+  width: 100%
+  line-height: 1.67
+  a
+    color: #74dbff
+
+//private-masters
+.private-masters
+  padding: 57px 0
+  .btn
+    margin: 30px auto 0
+    max-width: 369px
+
+.private-masters__wrapper
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
+.private-masters-card
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  border: none
+  width: 370px
+  height: 310px
+  .box-card__top
+    width: 97px
+    .list-characteristics-specialist
+      font-size: 13px
+  .box-card__photo
+    height: 145px
+  .box-card__center
+    width: calc(100% - 97px)
+  .name-specialist
+    font-size: 17.5px
+    margin: 0 0 9px
+  .box-card__info
+    margin: 0 0 9px
+
+.box-card__bottom
+  margin: auto 0 0
+  width: 100%
+  .btn
+    max-width: 100%
+    margin: 0 auto
+
+
+//salons
+.salons
+  padding: 0 0 40px
+
+.salons-promo
+  max-width: 370px
+  padding: 0
+
+.salons-new
+  width: calc(100% - 370px)
+  padding: 0 0 0 30px
+
+.salons-card
+  max-width: 370px
+  height: 178px
+  .box-card__top
+    width: 137px
+    margin: 0
+  .box-card__photo
+    width: 100%
+    height: 137px
+  .box-card__center
+    width: calc(100% - 137px)
+    padding: 0 0 0 19px
+  .box-card__info
+    width: 100%
+    padding: 0
+  .name-specialist
+    font-size: 17.5px
+    margin: 0 0 12px
+  .list-characteristics-specialist
+    font-size: 14px
+
+.salons-card-max
+  box-shadow: 0 10px 30px 0 rgba(243, 187, 35, 0.2)
+  border: solid 1px #f3bb23
+  height: 594px
+  .box-card__top
+    width: 100%
+    .list-characteristics-specialist
+      align-items: center
+      justify-content: space-between
+      display: flex
+      li
+        margin: 0
+        &:last-child
+          display: none
+  .box-card__photo
+    height: 240px
+    margin: 0 0 15px
+  .box-card__center
+    width: 100%
+    padding: 0
+    margin: 10px 0 0
+  .name-specialist
+    margin: 0 0 7px
+
+//sale
+.sale
+  padding: 57px 0 30px
+  h2
+    margin: 0
+
+.sale-box
+  margin: 35px 20px 35px 0
+  width: 303px
+  height: 340px
+  border-radius: 6px
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  background-color: #ffffff
+  padding: 20px
+  display: flex
+  flex-wrap: wrap
+  transition: .3s ease
+  .list-characteristics-specialist
+    width: auto
+  &:hover
+    transform: scale(1.02)
+
+
+.sale-box__photo
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  height: 263px
+  margin: 0 0 18px
+  position: relative
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.sale-size
+  position: absolute
+  left: 14px
+  top: 13px
+  width: 148px
+  height: 48px
+  background: url("../img/sale-bg.png") no-repeat center
+    size: contain
+  padding: 9px 10px 8px 13px
+  font-size: 13.5px
+  font-weight: 500
+  color: #fff
+
+.sale-box__content
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.name-salon
+  color: #529fba
+  font-size: 16.5px
+  font-weight: 500
+
+//massage-salons
+.massage-salons
+  padding: 57px 0 62px
+  .btn
+    max-width: 370px
+    margin: 32px auto 0
+
+.massage-salons__wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.massage-salons-card
+  height: 417px
+  justify-content: flex-start
+  .box-card__top
+    width: 100%
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
+    margin: 0 0 20px
+  .box-card__photo
+    width: 155px
+    height: 155px
+    border-radius: 0
+    margin: 0
+  .box-card__info
+    margin: 0
+    width: calc(100% - 155px)
+    padding: 0 0 0 20px
+  .box-card__center
+    width: 100%
+    padding: 0
+    margin: 0 0 20px
+  .box-experience
+    margin: 0
+  .btn
+    margin: 0 auto
+
+.btn-burger
+  display: none
+  position: absolute
+  left: 20px
+  top: 15px
+  flex-direction: column
+  align-items: center
+  width: 25px
+  height: 18px
+  justify-content: space-between
+  z-index: 2
+  span
+    display: block
+    width: 100%
+    height: 2px
+    background: #4e646d
+
+//mobile-menu
+.overlay
+  background: #4e646d
+  opacity: .7
+  position: fixed
+  z-index: 10
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  display: none
+
+.mobile-menu
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 11
+  background: #fff
+  height: 100%
+  width: 300px
+  overflow: hidden
+  .menu
+    margin: 50px 0 36px
+    li
+      width: 100%
+      margin: 0 0 34px
+      a
+        font-size: 18px
+      &:last-child
+        margin: 0
+  .btn-sale
+    max-width: none
+    margin: 0 0 40px
+  .btn
+    height: auto
+    padding: 11px 0
+    font-size: 18px
+
+
+.btn-close
+  width: 19px
+  height: 19px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+
+.mobile-menu__top
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 14px 20px
+  border-bottom: 1px solid #e3ebef
+  position: relative
+  z-index: 1
+
+.mobile-menu__content
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: calc(100% - 20px)
+  padding: 26px 20px
+  height: 100%
+  overflow-y: auto
+  position: relative
+  z-index: 1
+  &::-webkit-scrollbar
+    width: 4px
+    height: 4px
+    border-radius: 4px
+  &::-webkit-scrollbar-track
+    background-color: #fff
+  &::-webkit-scrollbar-track-piece
+    background-color: #529fba
+  &::-webkit-scrollbar-thumb
+    background-color: #fff
+  &::-webkit-scrollbar-corner
+    background-color: #529fba
+  &::-webkit-resizer
+    background-color: #fff
+
+.btn-services
+  display: none
+
+.mobile-menu__fixed
+  position: fixed
+  z-index: 7
+  left: 0
+  bottom: 0
+  width: 100%
+  box-shadow: 0px -10px 30px 0 rgba(116, 142, 155, 0.2)
+  background: #fff
+  display: none
+  align-items: stretch
+  justify-content: space-between
+  padding: 12px 0 10px
+
+.links-menu
+  width: 33.3%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #4e646d
+  font-size: 12px
+  .icon
+    margin: 0 0 9px
+    height: 23px
+    display: flex
+    align-items: center
+    justify-content: center
+  &:hover
+    color: #a6c133
+
+.mobile-menu__services
+  background: #529fba
+  &:before, &:after
+    position: absolute
+    content: ''
+    background: url("../img/figure-circle.png") no-repeat center
+      size: contain
+  &:before
+    width: 621px
+    height: 621px
+    right: 127px
+    top: 338px
+  &:after
+    width: 1093px
+    height: 1093px
+    left: 212px
+    bottom: -100px
+  .mobile-menu__top
+    border: none
+  .btn-close
+    margin: 0 0 0 auto
+    
+.list-services
+  li
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      font-size: 16px
+
+//header
+.header
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  position: fixed
+  z-index: 7
+  left: 0
+  top: 0
+  width: 100%
+  .header-top
+    display: none
+  .header-bottom
+    padding: 12px 0 11px
+  .logo
+    max-width: 269px
+    margin: 0 23px 0 0
+  .city
+    margin: 0
+  .cabinet-links
+    font-weight: normal
+
+
+//section-specialists-promo
+.section-specialists-promo
+  padding: 51px 0 20px
+  h2
+    margin: 0
+
+.section-specialists-promo__slider
+  width: 100%
+
+.section-specialists-promo__card
+  margin: 23px 20px 30px 0
+  width: 303px
+  height: 196px
+  padding: 20px
+  .list-characteristics-specialist
+    font-size: 13px
+  .name-specialist
+    font-size: 16px
+    margin: 0 0 7px
+  .box-card__photo
+    width: 80px
+    height: 80px
+  .box-card__info
+    width: calc(100% - 80px)
+    padding: 0 0 0 17px
+    .list-characteristics-specialist
+      flex-direction: row
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 7px 0 0
+      li
+        margin: 0
+
+//page-wrapper
+.page-wrapper
+  .container
+    justify-content: space-between
+    align-items: stretch
+  .specialists-new
+    width: 100%
+    padding: 0
+    h2
+      margin: 0
+  .sale
+    padding: 30px 0
+
+.sidebar
+  width: 270px
+  position: relative
+
+.sidebar-wrapper
+  width: 270px
+
+.fixed
+  position: fixed
+  top: 100px
+
+
+.page-content
+  width: calc(100% - 270px)
+  padding: 0 0 0 30px
+
+
+.page-content__specialist-slider
+  display: block
+  width: 100%
+
+  .specialist-card
+    max-width: 321px
+    margin: 20px 20px 30px 0
+
+.title-page
+  color: #4e646d
+  font-size: 25px
+  font-weight: 500
+
+
+.breadcrumbs
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 69px
+  li
+    a
+      color: rgba(78, 100, 109, 0.75)
+      font-size: 14px
+      &:after
+        content: '/'
+        margin: 0 5px
+        display: inline-block
+
+.wrapper
+  padding: 68px 0 0
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  color: #4e646d
+  font-size: 14px
+  font-family: $default-font
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 18px
+    height: 18px
+    display: inline-block
+    vertical-align: middle
+    border: solid 1px #529fba
+      radius: 3px
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 11px 0 0
+    overflow: hidden
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 100%
+      height: 100%
+      background: #529fba url("../img/check.png") no-repeat center
+        size: 11px
+
+.filter-box
+  background: #fff
+  width: 100%
+  margin: 0 0 20px
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  border-radius: 6px
+  position: relative
+  .list-services
+    li
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+      a
+        color: #4e646d
+        font-size: 14px
+        &:hover
+          color: #a6c133
+
+.filter-box__content
+  padding: 22px 20px 29px
+  width: 100%
+
+.list-filter
+  li
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+
+.filter-box__title
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #4e646d
+  font-size: 16px
+  font-weight: 500
+  padding: 19px 20px
+  cursor: pointer
+  .icon
+    width: 9px
+    height: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .3s ease
+
+
+.block_hidden
+  position: absolute
+  left: 0
+  top: calc(100% - 4px)
+  z-index: 3
+  display: none
+  background: #fff
+  border-top: 1px solid #e3ebef
+  border-radius: 0 0 6px 6px
+
+.in
+  .block_hidden
+    display: block
+  .icon
+    transform: rotate(180deg)
+
+.scroll-block
+  height: 300px
+  overflow-y: auto
+  &::-webkit-scrollbar
+    width: 4px
+    height: 4px
+    border-radius: 4px
+  &::-webkit-scrollbar-track
+    background-color: #529fba
+  &::-webkit-scrollbar-track-piece
+    background-color: #dce5ea
+  &::-webkit-scrollbar-thumb
+    background-color: #529fba
+  &::-webkit-scrollbar-corner
+    background-color: #dce5ea
+  &::-webkit-resizer
+    background-color: #529fba
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 40px 0 58px
+  li
+    &:first-child
+      margin: 0 10px 0 0
+    &:last-child
+      margin: 0 0 0 10px
+    a
+      padding: 5px 10px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #4e646d
+      font-size: 16px
+      font-weight: 500
+      border-radius: 3px
+    .active
+      color: #fff
+      background: #a6c133
+      
+.specialist-line__wrap
+  width: 100%
+  margin: 0 0 30px
+  border-radius: 6px
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  background: #fff
+  .name-specialist
+    margin: 0
+    font-size: 20.5px
+  .certificate-check
+    font-size: 14px
+  .photo
+    height: 150px
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    margin: 0 0 23px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .list-characteristics-specialist, .box-experience .links-accent
+    font-size: 14px
+
+
+.status-professional
+  margin: 0 auto 0 13px
+  display: flex
+  align-items: center
+  text-align: center
+  justify-content: center
+  color: #fff
+  border-radius: 3px
+  font-size: 13.5px
+  font-weight: 500
+  padding: 2px 13px
+
+.bg-orange
+  background: #f0a400
+
+.bg-red
+  background: #f13737
+
+.specialist-line__wrap-top
+  padding: 20px 20px 18px
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.specialist-line__wrap-bottom
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 18px 0 0
+  .btn
+    max-width: 150px
+    height: 50px
+
+  .btn-details
+    font-size: 16px
+    font-weight: 500
+
+.btn-diploma
+  border: solid 1px #529fba
+  font-size: 13px
+  color: #529fba
+  .text
+    &:after
+      content: ''
+      transition: .3s ease
+      display: inline-block
+      width: 9px
+      height: 5px
+      margin: 0 0 0 4px
+      background: url("../img/arrow-bottom-blue.png") no-repeat center
+        size: contain
+  &:hover
+    background: transparent
+    border-color: #7d8c92
+    color: #7d8c92
+  &:focus
+    color: #7d8c92
+
+.click-btn
+  border-color: #7d8c92
+  color: #7d8c92
+  .text
+    &:after
+      background: url("../img/arrow-top-grey.png") no-repeat center
+        size: contain
+
+.specialist-line__wrap-left
+  width: 150px
+
+.specialist-line__wrap-right
+  width: calc(100% - 150px)
+  padding: 0 0 0 20px
+
+.line-title
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  margin: 0 0 13px
+
+.specialist-line__wrap-hidden
+  width: 100%
+  padding: 25px 20px
+  border-top: 1px solid #e3ebef
+
+.certificate-box
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  width: 118px
+  height: 119px
+  overflow: hidden
+  margin: 0 auto
+
+.certificate-slider
+  width: 100%
+  padding: 0 40px
+  .slick-arrow
+    box-shadow: none
+    width: 19px
+    height: 47px
+    border-radius: 0
+    background: url("../img/arrow-right-blue.png") no-repeat center
+      size: contain
+    right: 0
+    &:hover, &:focus
+      background: url("../img/arrow-right-blue.png") no-repeat center
+        size: contain
+  .slick-prev
+    left: 0
+    background: url("../img/arrow-left-blue.png") no-repeat center
+      size: contain
+    right: 0
+    &:hover, &:focus
+      background: url("../img/arrow-left-blue.png") no-repeat center
+        size: contain
+
+  .slick-disabled
+    opacity: 1
+    visibility: visible
+
+.btn-filter
+  display: none
+  max-width: 130px
+  height: 39px
+  width: 100%
+  .icon
+    margin: 0 8px 0 0
+
+.line-wrapper
+  margin: 0 0 30px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.mobile-menu__filter
+  left: auto
+  right: 0
+  background: #f3f7f9
+  .mobile-menu__top
+    border: none
+  .btn-close
+    margin: 0 0 0 auto
+  .mobile-menu__content
+    &::-webkit-scrollbar
+      width: 4px
+      height: 4px
+      border-radius: 4px
+    &::-webkit-scrollbar-track
+      background-color: #a8c0cc
+    &::-webkit-scrollbar-track-piece
+      background-color: #f3f7f9
+    &::-webkit-scrollbar-thumb
+      background-color: #a8c0cc
+    &::-webkit-scrollbar-corner
+      background-color: #f3f7f9
+    &::-webkit-resizer
+      background-color: #a8c0cc
+  .block_hidden
+    position: relative
+    top: 0
+
+  .btn
+    font-size: 16px
+    margin: 0 0 40px
+    box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+    height: 53px
+  .ui-selectmenu-menu
+    position: relative
+    top: 0 !important
+
+.d-mobile
+  display: none
+
+
+//page-wrapper__card
+.page-wrapper__card
+  padding: 32px 0 0
+
+.card-company__wrapper
+  background: #fff
+  width: 100%
+  padding: 28px 0 0
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  border-radius: 6px
+
+//gallery
+.gallery, .document, .specialist-company, .services-company, .education
+  padding: 0 30px
+  h2
+    font-size: 20px
+    margin: 0 0 20px
+
+.gallery-box
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  width: 144px
+  height: 144px
+  margin: 0 29px 0 0
+  border-radius: 4px
+  overflow: hidden
+  outline: none
+  box-shadow: none
+  box-sizing: border-box
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+    border: none
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.document
+  margin: 42px 0
+
+.document-box
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  width: 144px
+  height: 144px
+  margin: 0 29px 0 0
+  img
+    width: 100%
+
+.specialist-company__box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 155px
+  border-radius: 4px
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.2)
+  background: #fff
+  overflow: hidden
+  height: 295px
+  margin: 0 30px 43px 0
+  .photo
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    height: 155px
+    overflow: hidden
+    width: 100%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .text
+    padding: 13px
+    color: #7d8c92
+    font-size: 12px
+    h3
+      color: #4e646d
+      font-size: 14px
+      font-weight: 500
+      margin: 0 0 10px
+
+.services-company
+  .box-experience, .list-characteristics-specialist
+    font-size: 16px
+
+//about-company
+.about-company
+  padding: 0 30px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.about-company__logo
+  width: 340px
+  height: 338px
+  border-radius: 4px
+  background: #f3f6f3
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    mix-blend-mode: multiply
+
+.about-company__info
+  padding: 0 0 0 30px
+  width: calc(100% - 340px)
+  .name
+    width: 100%
+    font-size: 24.5px
+    font-weight: 500
+    color: #529fba
+    margin: 0 0 20px
+  .list-characteristics-specialist
+    font-size: 16px
+    li
+      margin: 0 0 25px
+  .list-rating
+    li
+      margin: 0 0 20px
+      &:last-child
+        margin: 0 0 20px
+
+
+.list-rating
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  font-size: 16.5px
+  li
+    margin: 0 0 20px
+    width: 50%
+    &:last-child
+      margin: 0 0 20px
+
+.list-social
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin: 25px 0 35px
+  li
+    margin: 0 19px 0 0
+    &:last-child
+      margin: 0
+
+.about-company__contacts
+  margin: 44px 0 43px
+  padding: 0 30px
+  h2
+    font-size: 20px
+    margin: 0 0 16px
+
+.list-message
+  display: flex
+  align-items: center
+  margin: 0 0 0 20px
+  li
+    margin: 0 21px 0 0
+    &:last-child
+      margin: 0
+
+.about-company__contacts-box
+  width: 100%
+  margin: 0 0 20px
+  border-radius: 4px
+  background: #f3f7f9
+  padding: 17px 37px
+  position: relative
+  color: #7d8c92
+  font-size: 16px
+  a
+    display: inline
+  &:before
+    content: ''
+    position: absolute
+    left: 20px
+    top: 22px
+    border-radius: 50%
+    width: 7px
+    height: 7px
+    background: #a6c133
+  &:last-child
+    margin: 0
+
+.phone-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 11px 0 0
+  a
+    display: flex
+    font-weight: normal
+  .phone
+    display: flex
+    align-items: center
+    strong
+      color: #4e646d
+      font-size: 20px
+      font-weight: 500
+      margin: 0 0 0 5px
+      display: flex
+      align-items: center
+
+.btn-phone
+  max-width: 154px
+  min-width: 154px
+  height: 33px
+  border-radius: 6px
+  border: solid 1px #dadee7
+  background: transparent
+  color: #529fba
+  font-size: 16px
+  margin: 0 0 0 11px
+
+.additional-info
+  padding: 0 30px
+  font-size: 16px
+  margin: 0 0 39px
+  color: #4e646d
+  h2
+    font-size: 20px
+    margin: 0 0 16px
+
+//reviews
+.reviews
+  margin: 43px 0 0
+  h2
+    margin: 0 0 32px
+    font-size: 20px
+    padding: 0 30px
+
+.list-stars
+  display: flex
+  align-items: center
+  margin: 0 30px 0 0
+  li
+    margin: 0 13px 0 0
+    width: 17px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    &:last-child
+      margin: 0
+
+.reviews-general
+  padding: 0 30px 49px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  width: 100%
+  flex-wrap: wrap
+
+.line-rating__wrap
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 25px
+  &:last-child
+    margin: 0
+
+.line-rating
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .line
+    width: 272px
+    height: 5px
+    border-radius: 2.5px
+    background-color: #f3f3f3
+    position: relative
+    overflow: hidden
+    .line-bg
+      background: #ed9c00
+      height: 5px
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 119px
+    .line-bg25
+      width: 225px
+    .line-bg20
+      width: 176px
+    .line-bg10
+      width: 42px
+    .line-bg1
+      width: 19px
+  .val
+    margin: 0 0 0 30px
+    color: #7d8c92
+    font-size: 15.5px
+
+.reviews-general__right
+  max-width: 225px
+  width: 100%
+  .list
+    font-size: 15.5px
+    margin: 32px 0 0
+    color: #4e646d
+    li
+      text-align: right
+      margin: 0 0 15px
+      &:last-child
+        margin: 0
+    span
+      color: #7d8c92
+
+.review-box__wrap
+  width: 100%
+  padding: 34px 30px 36px
+  border-top: 1px solid #e3ebef
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  color: #4e646d
+  font-size: 15.5px
+  .name-user
+    font-size: 18.5px
+    font-weight: 500
+  .reviews-services
+    margin: 13px 0
+    color: #7d8c92
+  .text
+    line-height: 1.61
+
+
+.review-box__left
+  width: 140px
+  color: #7d8c92
+  font-size: 15.5px
+  ul
+    margin: 0 0 14px
+
+.review-box__right
+  width: calc(100% - 140px)
+  padding: 0 0 0 30px
+
+.answer-box
+  position: relative
+  margin: 29px 0 0
+  padding: 23px 24px 26px
+  background: #f3f7f9
+  border-radius: 4px
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    border-bottom: 33px solid #f3f7f9
+    border-right: 24px solid transparent
+    top: -33px
+    left: 25px
+  .name-user
+    margin: 0 0 13px
+
+.load-more-btn
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 26.5px 30px
+  border-top: 1px solid #e3ebef
+  font-size: 18.5px
+  font-weight: 500
+  color: #529fba
+
+.company-nav-box
+  .filter-box__title
+    padding: 30px 30px 0
+    justify-content: flex-start
+    display: none
+  .logo-name
+    color: #000
+    font-size: 16.5px
+    font-weight: 500
+    margin: 0 0 0 27px
+  .logo-company
+    width: 71px
+    height: 71px
+    border-radius: 6px
+    overflow: hidden
+  .filter-box__content
+    padding: 30px 30px 27px
+  .menu-card
+    li
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+      a
+        color: #6597f3
+        font-size: 18px
+        span
+          color: #4e646d
+      .active
+        color: #000
+  .btn
+    margin: 32px 0 0
+    display: none
+
+.new-block
+  .btn, .filter-box__title
+    display: flex
+  .menu-card
+    li
+      a
+        font-size: 16px
+
+
+//page-wrapper__card-specialist
+.page-wrapper__card-specialist
+  .company-nav-box
+    .logo-company
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .name-wrapper
+      width: calc(100% - 71px)
+      padding: 0 0 0 27px
+    .logo-name
+      margin: 0
+      font-size: 16.5px
+    .filter-box__title
+      align-items: flex-start
+    .status-professional
+      margin: 10px 0 0 0
+      max-width: 73px
+      font-size: 13.5px
+
+.about-masters
+  .about-company__logo
+    width: 188px
+    height: 280px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .about-company__info
+    width: calc(100% - 188px)
+    .certificate-check
+      width: 100%
+      margin: 9px 0 0
+    .btn-express
+      max-width: 220px
+      height: 50px
+      font-size: 16px
+  .line-title
+    h3
+      margin: 0
+      width: auto
+  .certificate-check
+    font-size: 15.5px
+    margin: 0 0 9px
+    .icon
+      width: 17px
+      height: 17px
+  .about-company__info .list-rating li, .about-company__info .list-characteristics-specialist li
+    margin: 0 0 9px
+    &:last-child
+      margin: 0 0 9px
+  .phone-wrapper
+    margin: 0 0 20px
+    color: #7d8c92
+  .line-title
+    margin: 0 0 9px
+
+.about-company__bottom
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 28px 0 0
+  .list-social
+    margin: 0 30px 0 0
+    li
+      margin: 0 19px 0 0
+      &:last-child
+        margin: 0
+      a
+        width: 33px
+        height: 33px
+  .list-characteristics-specialist
+    font-size: 16px
+
+.about-masters__contacts-box
+  padding: 0
+  border: none
+  background: transparent
+  color: #4e646d
+  &:before
+    display: none
+  .address
+    position: relative
+    padding: 0 0 0 17px
+    margin: 0 0 14px
+    &:before
+      content: ''
+      width: 7px
+      height: 7px
+      background-color: #a6c133
+      border-radius: 50%
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+  .certificate-check
+    font-size: 15.5px
+    .icon
+      width: 21px
+      height: 21px
+
+.education
+  margin: 0 0 40px
+  .certificate-check
+    font-size: 16px
+    color: #4e646d
+    align-items: flex-start
+    span
+      color: #7d8c92
+    .icon
+      width: 17px
+      height: 17px
+
+.modal__div
+  position: fixed
+  max-width: 320px
+  height: 100%
+  width: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+  .modal__close
+    width: 13px
+    height: 13px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+  .modal__wrapper
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px auto
+    padding: 24px 24px 53px
+    box-sizing: border-box
+    position: relative
+    background: #fff
+    border-radius: 4px
+
+.modal__wrapper-head
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 0 24px
+  h2
+    font-size: 20px
+    font-weight: 500
+    color: #4e646d
+    margin: 0
+
+
+.modal__wrapper-body
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  .photo
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 132px
+    height: 132px
+    background: #f3f6f3
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  h3
+    margin: 18px auto 15px
+    color: #529fba
+    font-weight: 500
+    font-size: 17.5px
+  .list-message
+    margin: 12px 0 26px
+    li
+      margin: 0 21px 0 0
+      &:last-child
+        margin: 0
+      a
+        width: 28px
+        height: 28px
+  .list-social
+    margin: 25px auto 0
+
+.number-phone
+  color: #4e646d
+  font-size: 20px
+  font-weight: 500
+
+.address-modal
+  font-size: 16px
+  color: #4e646d
+  max-width: 212px
+  margin: 0 auto
+  span
+    color: #7d8c92
+
+.interview-slider, .section-specialists-promo__slider, .page-content__specialist-slider
+  .slick-list
+    padding: 0 30px
+    margin: 0 0 0 -30px
+
+.owl-carousel .owl-stage-outer
+  overflow: visible
+
+//.container-hidden
+//  .container
+//    overflow: hidden
+
+
+.ui-selectmenu-button.ui-button
+  border: none
+    radius: 0
+  background: transparent
+  width: 100%
+  outline: none
+  margin: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #4e646d
+  font-weight: 500
+  font-size: 16px
+  font-family: $default-font
+  padding: 19px 20px
+
+.ui-selectmenu-text
+  margin-right: 0
+
+.ui-state-hover .ui-icon, .ui-button:hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:focus .ui-icon
+  width: 9px
+  height: 5px
+  background: url("../img/arrow-bottom2.png") no-repeat center
+    size: contain
+
+.ui-selectmenu-button-open .ui-icon
+  width: 9px
+  height: 5px
+  background: url("../img/arrow-bottom2.png") no-repeat center
+    size: contain
+  transform: rotate(180deg)
+
+.filter-box__title
+  label
+    width: 100%
+
+.ui-button .ui-icon
+  width: 9px
+  height: 5px
+  background: url("../img/arrow-bottom2.png") no-repeat center
+    size: contain
+  order: 1
+
+.ui-selectmenu-menu
+  padding: 22px 0 29px
+  background: #fff
+  position: relative
+  top: 0 !important
+  border: none
+    top: 1px solid #e3ebef
+    radius: 0 0 6px 6px
+
+  .ui-menu
+    border: none
+      radius: 0 0 6px 6px
+    box-sizing: border-box
+    //width: 100%
+    padding: 0 20px
+    overflow-y: auto
+    height: 300px
+    &::-webkit-scrollbar
+      width: 4px
+      height: 4px
+      border-radius: 4px
+    &::-webkit-scrollbar-track
+      background-color: #529fba
+    &::-webkit-scrollbar-track-piece
+      background-color: #dce5ea
+    &::-webkit-scrollbar-thumb
+      background-color: #529fba
+    &::-webkit-scrollbar-corner
+      background-color: #dce5ea
+    &::-webkit-resizer
+      background-color: #529fba
+
+
+.ui-menu
+  .ui-menu-item-wrapper
+    padding: 0
+    border: none
+    color: #4e646d
+    font-size: 14px
+
+    &:hover
+      background: transparent
+      border: none
+      color: #a6c133
+      padding: 0
+  .ui-menu-item
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active
+  margin: 0
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+  background: transparent
+  color: #a6c133
+
+.services-list__hidden
+  li
+    display: none
+    &:nth-child(-n+8)
+      display: flex
+
+
+@import "media"
+// Всегда в конце
