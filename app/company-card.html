@@ -29,7 +29,7 @@
 
 <div class="mobile-menu mobile-menu__cabinet">
     <div class="mobile-menu__top">
-        <div class="btn-close"><img src="img/close.png" alt=""></div>
+        <div class="btn-close"><img src="img/close.svg" alt=""></div>
         <a href="#" class="cabinet-links">
             <span class="icon"><img src="img/user.png" alt=""></span>
             <span class="text">Личный кабинет</span>
@@ -38,7 +38,7 @@
 
     <div class="mobile-menu__content">
         <div class="box-location">
-            <div class="icon"><img src="img/location.png" alt=""></div>
+            <div class="icon"><img src="img/location.svg" alt=""></div>
             <p>Регион:</p><a href="#" class="city">Санкт-Петербург</a>
         </div>
 
@@ -95,7 +95,7 @@
 
 <div class="mobile-menu mobile-menu__filter">
     <div class="mobile-menu__top">
-        <div class="btn-close"><img src="img/close.png" alt=""></div>
+        <div class="btn-close"><img src="img/close.svg" alt=""></div>
     </div>
     <div class="mobile-menu__content">
         <div class="filter-box">
@@ -210,7 +210,7 @@
             </ul>
 
             <div class="box-location">
-                <div class="icon"><img src="img/location.png" alt=""></div>
+                <div class="icon"><img src="img/location.svg" alt=""></div>
                 <p>Регион:</p><a href="#" class="city">Санкт-Петербург</a>
             </div>
 
@@ -222,19 +222,21 @@
     </div>
     <div class="header-bottom">
         <div class="container">
-            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
             <a href="#" class="btn-category btn-green btn">
-                <span class="btn-category__icon"><img src="img/burger.png" alt=""></span>
+                <span class="btn-category__icon"><img src="img/burger.svg" alt=""></span>
                 <span class="btn-category__text">Категории</span>
             </a>
 
             <div class="box-location">
-                <div class="icon"><img src="img/location.png" alt=""></div>
+                <div class="icon"><img src="img/location.svg" alt=""></div>
                 <a href="#" class="city"><span>Местоположение:</span> Санкт-Петербург</a>
             </div>
 
-            <a href="#" class="btn-search"><img src="img/" alt=""></a>
+            <div class="search-wrapper">
+                <div class="btn-search"><img src="img/search.svg" alt=""></div>
+            </div>
 
             <a href="#" class="btn btn-accent btn-place">Разместить мастера/организацию</a>
             <a href="#" class="cabinet-links">
@@ -246,6 +248,12 @@
     </div>
 </header>
 
+<div class="menu-category-wrapper">
+    <div class="container">
+
+    </div>
+</div>
+
 <div class="wrapper">
     <div class="page-wrapper page-wrapper__card">
         <div class="container">
@@ -253,6 +261,7 @@
             <ul class="breadcrumbs">
                 <li><a href="#">Главная страница</a></li>
                 <li><a href="#">Все организации</a></li>
+                <li><span>Оазис</span></li>
             </ul>
 
             <div class="sidebar">
@@ -285,15 +294,15 @@
                     <div class="about-company" id="about-company">
                         <div class="about-company__logo"><img src="img/logo-company-max.png" alt=""></div>
                         <div class="about-company__info">
-                            <h3 class="name">Оазис</h3>
+                            <h1>Оазис</h1>
                             <ul class="list-characteristics-specialist list-rating">
                                 <li>
-                                    <div class="icon"><img src="img/chat.png" alt=""></div>
+                                    <div class="icon"><img src="img/chat.svg" alt=""></div>
                                     <span>Отзывы:</span>
                                     <p> 365</p>
                                 </li>
                                 <li>
-                                    <div class="icon"><img src="img/rating.png" alt=""></div>
+                                    <div class="icon"><img src="img/rating.svg" alt=""></div>
                                     <span>Рейтинг: </span>
                                     <p>4,9</p>
                                 </li>
@@ -316,13 +325,13 @@
                             </ul>
 
                             <ul class="list-social">
-                                <li><a href="#"><img src="img/vk.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/ok.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+                                <li><a href="#"><img src="img/ok.svg" alt=""></a></li>
                                 <li><a href="#"><img src="img/inst.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
                             </ul>
 
-                            <a href="#" class="btn btn-blue">Экспресс-запись</a>
+                            <a href="#" class="btn btn-blue btn-express">Экспресс-запись</a>
                         </div>
                     </div>
 
@@ -337,7 +346,7 @@
                             <div class="phone-wrapper">
                                 <div class="phone" data-last="45 18">
                                     <p>Телефон:</p> <strong>+7 (921) 454 <span></span><a href="#modal__card"
-                                                                                         class="btn btn-border btn-phone open_modal">Показать
+                                                                                         class="btn btn-light-blue btn-phone open_modal">Показать
                                     номер</a></strong></div>
                                 <ul class="list-message">
                                     <li><a href="#"><img src="img/whatsap.png" alt=""></a></li>
@@ -356,7 +365,7 @@
                             <div class="phone-wrapper">
                                 <div class="phone" data-last="45 18">
                                     <p>Телефон:</p> <strong>+7 (921) 454 <span></span><a href="#"
-                                                                                         class="btn btn-border btn-phone">Показать
+                                                                                         class="btn btn-light-blue btn-phone">Показать
                                     номер</a></strong>
                                 </div>
 
@@ -379,50 +388,62 @@
                     </div>
 
                     <div class="gallery" id="gallery">
-                        <h2>Галерея <span>(12)</span></h2>
+                        <h2>Галерея (12)</h2>
 
                         <div class="gallery-slider w-100">
                             <div class="slide">
-                                <a href="img/gallery1.jpg" data-fancybox="images-gallery" class="gallery-box"><img src="img/gallery1.jpg" alt=""></a>
+                                <a href="img/gallery1.jpg" data-fancybox="images-gallery" class="gallery-box"><img
+                                        src="img/gallery1.jpg" alt=""></a>
                             </div>
                             <div class="slide">
-                                <a href="img/gallery2.jpg" data-fancybox="images-gallery" class="gallery-box"><img src="img/gallery2.jpg" alt=""></a>
+                                <a href="img/gallery2.jpg" data-fancybox="images-gallery" class="gallery-box"><img
+                                        src="img/gallery2.jpg" alt=""></a>
                             </div>
                             <div class="slide">
-                                <a href="img/gallery3.jpg" data-fancybox="images-gallery" class="gallery-box"><img src="img/gallery3.jpg" alt=""></a>
+                                <a href="img/gallery3.jpg" data-fancybox="images-gallery" class="gallery-box"><img
+                                        src="img/gallery3.jpg" alt=""></a>
                             </div>
                             <div class="slide">
-                                <a href="img/gallery4.jpg" data-fancybox="images-gallery" class="gallery-box"><img src="img/gallery4.jpg" alt=""></a>
+                                <a href="img/gallery4.jpg" data-fancybox="images-gallery" class="gallery-box"><img
+                                        src="img/gallery4.jpg" alt=""></a>
                             </div>
                             <div class="slide">
-                                <a href="img/img-bg4.jpg" data-fancybox="images-gallery" class="gallery-box"><img src="img/img-bg4.jpg" alt=""></a>
+                                <a href="img/img-bg4.jpg" data-fancybox="images-gallery" class="gallery-box"><img
+                                        src="img/img-bg4.jpg" alt=""></a>
                             </div>
                             <div class="slide">
-                                <a href="img/gallery1.jpg" data-fancybox="images-gallery" class="gallery-box"><img src="img/gallery1.jpg" alt=""></a>
+                                <a href="img/gallery1.jpg" data-fancybox="images-gallery" class="gallery-box"><img
+                                        src="img/gallery1.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="document" id="document">
-                        <h2>Документы и сертификаты <span>(15)</span></h2>
+                        <h2>Документы и сертификаты (15)</h2>
                         <div class="document-slider w-100">
-                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images" class="document-box"><img src="img/diplom1.jpg"
-                                                                                                                          alt=""></a></div>
-                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images" class="document-box"><img src="img/diplom1.jpg"
-                                                                                                                          alt=""></a></div>
-                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images" class="document-box"><img src="img/diplom1.jpg"
-                                                                                                                          alt=""></a></div>
-                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images" class="document-box"><img src="img/diplom1.jpg"
-                                                                                                                          alt=""></a></div>
-                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images" class="document-box"><img src="img/diplom1.jpg"
-                                                                                                                          alt=""></a></div>
-                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images" class="document-box"><img src="img/diplom1.jpg"
-                                                                                                                          alt=""></a></div>
+                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images"
+                                                  class="document-box"><img src="img/diplom1.jpg"
+                                                                            alt=""></a></div>
+                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images"
+                                                  class="document-box"><img src="img/diplom1.jpg"
+                                                                            alt=""></a></div>
+                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images"
+                                                  class="document-box"><img src="img/diplom1.jpg"
+                                                                            alt=""></a></div>
+                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images"
+                                                  class="document-box"><img src="img/diplom1.jpg"
+                                                                            alt=""></a></div>
+                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images"
+                                                  class="document-box"><img src="img/diplom1.jpg"
+                                                                            alt=""></a></div>
+                            <div class="slide"><a href="img/diplom1.jpg" data-fancybox="images"
+                                                  class="document-box"><img src="img/diplom1.jpg"
+                                                                            alt=""></a></div>
                         </div>
                     </div>
 
                     <div class="specialist-company" id="specialist-company">
-                        <h2>Специалисты <span>(39)</span></h2>
+                        <h3>Специалисты (39)</h3>
                         <div class="specialist-company__slider w-100">
                             <div class="slide">
                                 <div class="specialist-company__box">
@@ -523,7 +544,7 @@
                     </div>
 
                     <div class="services-company" id="services-company">
-                        <h2>Услуги и цены <span>(50)</span></h2>
+                        <h3>Услуги и цены (50)</h3>
 
                         <div class="box-experience">
                             <ul class="list-characteristics-specialist services-list__hidden">
@@ -707,7 +728,7 @@
                     </div>
 
                     <div class="reviews" id="reviews">
-                        <h2>Отзывы <span>(50)</span></h2>
+                        <h4>Отзывы (50)</h4>
 
                         <div class="reviews-general">
                             <div class="reviews-general__left">
@@ -798,7 +819,7 @@
                             </div>
 
                             <div class="reviews-general__right">
-                                <a href="#" class="btn btn-blue">Оставить свой отзыв</a>
+                                <a href="#" class="btn btn-light-blue">Оставить свой отзыв</a>
                                 <ul class="list">
                                     <li><p><span>Средний рейтинг:</span> 4.9 <span>из</span> 5</p></li>
                                     <li><p><span>Всего отзывов:</span> 61</p></li>
@@ -1002,11 +1023,11 @@
 
                                         <ul class="list-characteristics-specialist">
                                             <li>
-                                                <div class="icon"><img src="img/chat.png" alt=""></div>
+                                                <div class="icon"><img src="img/chat.svg" alt=""></div>
                                                 <span>365</span>
                                             </li>
                                             <li>
-                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <div class="icon"><img src="img/rating.svg" alt=""></div>
                                                 <span>4,9</span>
                                             </li>
                                         </ul>
@@ -1039,11 +1060,11 @@
 
                                         <ul class="list-characteristics-specialist">
                                             <li>
-                                                <div class="icon"><img src="img/chat.png" alt=""></div>
+                                                <div class="icon"><img src="img/chat.svg" alt=""></div>
                                                 <span>365</span>
                                             </li>
                                             <li>
-                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <div class="icon"><img src="img/rating.svg" alt=""></div>
                                                 <span>4,9</span>
                                             </li>
                                         </ul>
@@ -1076,11 +1097,11 @@
 
                                         <ul class="list-characteristics-specialist">
                                             <li>
-                                                <div class="icon"><img src="img/chat.png" alt=""></div>
+                                                <div class="icon"><img src="img/chat.svg" alt=""></div>
                                                 <span>365</span>
                                             </li>
                                             <li>
-                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <div class="icon"><img src="img/rating.svg" alt=""></div>
                                                 <span>4,9</span>
                                             </li>
                                         </ul>
@@ -1113,11 +1134,11 @@
 
                                         <ul class="list-characteristics-specialist">
                                             <li>
-                                                <div class="icon"><img src="img/chat.png" alt=""></div>
+                                                <div class="icon"><img src="img/chat.svg" alt=""></div>
                                                 <span>365</span>
                                             </li>
                                             <li>
-                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <div class="icon"><img src="img/rating.svg" alt=""></div>
                                                 <span>4,9</span>
                                             </li>
                                         </ul>
@@ -1150,11 +1171,11 @@
 
                                         <ul class="list-characteristics-specialist">
                                             <li>
-                                                <div class="icon"><img src="img/chat.png" alt=""></div>
+                                                <div class="icon"><img src="img/chat.svg" alt=""></div>
                                                 <span>365</span>
                                             </li>
                                             <li>
-                                                <div class="icon"><img src="img/rating.png" alt=""></div>
+                                                <div class="icon"><img src="img/rating.svg" alt=""></div>
                                                 <span>4,9</span>
                                             </li>
                                         </ul>
@@ -1208,7 +1229,7 @@
     <div class="modal__wrapper">
         <div class="modal__wrapper-head">
             <h2>Визитная карточка</h2>
-            <div class="modal__close"><img src="img/close.png" alt=""></div>
+            <div class="modal__close"><img src="img/close.svg" alt=""></div>
         </div>
 
         <div class="modal__wrapper-body">
@@ -1239,10 +1260,10 @@
                 <li><a href="#"><img src="img/telegram.png" alt=""></a></li>
             </ul>
             <ul class="list-social">
-                <li><a href="#"><img src="img/vk.png" alt=""></a></li>
-                <li><a href="#"><img src="img/ok.png" alt=""></a></li>
+                <li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/ok.svg" alt=""></a></li>
                 <li><a href="#"><img src="img/inst.png" alt=""></a></li>
-                <li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+                <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
             </ul>
         </div>
     </div>

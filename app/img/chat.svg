@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15.81" viewBox="0 0 19 15.81">
+    <style type="text/css">
+        .st1{stroke:#7c8b90;fill:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;}
+        .st0{fill:#7c8b90;}
+    </style>
+    <path class="st0" d="M14.63,0L4.36,0C1.95,0 0,1.95 0,4.36L0,7.63C0,9.91 1.76,11.79 3.99,11.98L3.99,13.75L3.99,15.81L5.62,14.53L8.81,12L14.63,12C17.04,12 18.99,10.04 18.99,7.63L18.99,4.36C18.99,1.95 17.04,0 14.63,0M14.63,1C16.49,1 17.99,2.5 17.99,4.36L17.99,7.63C17.99,9.49 16.49,11 14.63,11L8.46,11L4.99,13.75L4.99,11L4.36,11C2.5,11 0.99,9.49 0.99,7.63L0.99,4.36C0.99,2.5 2.5,1 4.36,1L14.63,1"/>
+    <path class="st1" d="M5,6L6,6"/>
+    <path class="st1" d="M9,6L10,6"/>
+    <path class="st1" d="M13,6L14,6"/>
+</svg>
