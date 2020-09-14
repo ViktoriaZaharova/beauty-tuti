@@ -2048,14 +2048,14 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff;
+  color: #b359d8;
   border-radius: 3px;
   font-size: 13.5px;
   font-weight: 500;
   padding: 2px 13px; }
 
 .bg-orange {
-  background: #f0a400; }
+  background: #f4d9ff; }
 
 .bg-red {
   background: #f13737; }
@@ -2404,6 +2404,9 @@ footer {
 .about-company__info {
   padding: 0 0 0 30px;
   width: calc(100% - 340px); }
+  .about-company__info .name {
+    width: auto;
+    margin: 0; }
   .about-company__info h1 {
     width: 100%;
     font-size: 24.5px;
@@ -2543,7 +2546,8 @@ footer {
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      color: #000000; }
 
 .btn-phone {
   max-width: 154px;
@@ -2876,8 +2880,7 @@ footer {
 .about-masters__contacts-box {
   padding: 0;
   border: none;
-  background: transparent;
-  color: #4e646d; }
+  background: transparent; }
   .about-masters__contacts-box:before {
     display: none; }
   .about-masters__contacts-box .address {
@@ -2905,12 +2908,9 @@ footer {
   margin: 0 0 40px; }
   .education .certificate-check {
     font-size: 16px;
-    color: #4e646d;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
-    .education .certificate-check span {
-      color: #7d8c92; }
     .education .certificate-check .icon {
       width: 17px;
       height: 17px; }
