@@ -26,6 +26,9 @@
   .salons-new
     width: calc(100% - 340px)
 
+  .box-location, .btn-place
+    margin: 0 auto
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1160px)
   .specialists-promo
@@ -94,13 +97,19 @@
     .list
       font-size: 14px
 
-@media only screen and (max-width : 1060px)
-  .btn-burger
+@media only screen and (max-width : 1070px)
+  .btn-burger, .search-mobile
     display: flex
+
+  .search-wrapper, .btn-category
+    display: none
+
+  .btn-place
+    margin: 0
 
   header
     .box-location
-      margin: 0 76px 0 auto
+      margin: 0 auto 0 50px
     .list-statistic, .btn-sale, .menu
       display: none
 
@@ -108,10 +117,14 @@
     margin: 0
 
   .header-top
-    padding: 15px 0
+    padding: 15px 0 33px
 
   .header-bottom
-    padding: 25px 0
+    .search-mobile
+      display: none
+
+  .header .header-bottom
+    padding: 0 0 28px
 
   main
     &:after
@@ -156,7 +169,7 @@
       margin: 0 0 46px
 
   .wrapper
-    padding: 117px 0 0
+    padding: 147px 0 0
 
 @media only screen and (max-width : 1040px)
   .reviews-general__right
@@ -397,6 +410,18 @@
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 742px)
+  .reviews-general__right
+    max-width: none
+    margin: 39px 0 0
+    .btn
+      margin: 0 auto
+      max-width: 280px
+    .list
+      margin: 24px 0 0
+      li
+        text-align: center
+
 @media only screen and (max-width : 700px)
   .btn
     font-size: 14px
@@ -485,16 +510,7 @@
   .reviews-general
     padding: 0 20px 24px
 
-  .reviews-general__right
-    max-width: none
-    margin: 39px 0 0
-    .btn
-      margin: 0 auto
-      max-width: 280px
-    .list
-      margin: 24px 0 0
-      li
-        text-align: center
+
 
   .list-stars
     margin: 0 12px 0 0
@@ -550,20 +566,7 @@
 
 
 @media only screen and (max-width : 630px)
-  .header-bottom
-    padding: 5px 0 26px
-    .container
-      flex-direction: column
-      align-items: center
-    .btn
-      margin: 0 0 0 auto
 
-  .logo
-    order: 1
-    margin: 24px auto 0
-
-  .header-top, .header .header-top
-    display: none
 
   .list-category li
     width: 50%
@@ -597,7 +600,7 @@
       margin: 0 0 27px
 
   .wrapper
-    padding: 97px 0 0
+    padding: 135px 0 0
 
   .about-masters .about-company__info
     width: 100%
@@ -629,8 +632,51 @@
         text-align: center
         justify-content: center
 
+  .mobile-menu .submenu-category
+    left: 0
+    z-index: 3
 
 @media only screen and (max-width : 575px)
+  .header .header-bottom
+    padding: 5px 0 22px
+
+  .header-bottom
+    padding: 22px 0
+    .container
+      align-items: flex-start
+    .btn
+      margin: 0 0 0 auto
+    .search-mobile
+      display: flex
+      order: 1
+
+  .search-mobile
+    max-width: 116px
+    width: 100%
+    padding: 14px 21px
+    border-radius: 6px
+    background-color: #f3f7f9
+    box-sizing: border-box
+    margin: 25px 0 0
+    input
+      background: transparent
+      color: #7d8c92
+      &::placeholder
+        color: #7d8c92
+
+  .logo
+    order: 1
+
+  .header .logo
+    margin: 22px 0 0
+    max-width: 50%
+    justify-content: flex-start
+    img
+      max-width: 175px
+
+  .header-top, .header .header-top
+    display: none
+
   .interview-box
     flex-direction: column
     align-items: flex-start
@@ -1035,6 +1081,9 @@
       width: 17px
       height: 17px
 
+  .header .logo
+    max-width: 175px
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 370px)
@@ -1086,3 +1135,12 @@
 
   .line-rating .line .line-bg1
     width: 10px
+
+  .header .logo
+    max-width: 150px
+    img
+      max-width: none
+      width: 100%
+
+  .search-mobile
+    margin: 19px 0 0

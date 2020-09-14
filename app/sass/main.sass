@@ -236,7 +236,6 @@ header
 
 .header-top
   padding: 9px 0
-  border-bottom: 1px solid #e3ebef
 
   .container
     justify-content: space-between
@@ -248,17 +247,10 @@ header
 .cabinet-links
   display: flex
   align-items: center
-  color: #529fba
+  color: #000000
   font-size: 15px
-  font-weight: 500
-  background: #dae4e9
-  height: 46px
-  width: 100%
-  max-width: 86px
-  border-radius: 6px
   justify-content: center
   text-align: center
-  border: 1px solid transparent
 
   .icon
     width: 19px
@@ -273,7 +265,7 @@ header
 .box-location
   display: flex
   align-items: center
-  color: #000000
+  color: #7d8c92
   margin: 0 auto 0 29px
 
   .icon
@@ -296,10 +288,28 @@ header
     span
       color: #7d8c92
 
-.btn-category__icon
-  margin: 0 10px 0 0
-  width: 12px
-  height: 11px
+.btn-category
+  padding: 0 0 0 25px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 16px
+    transform: translate(0,-50%)
+    width: 12px
+    height: 11px
+    background: url("../img/burger.svg") no-repeat center
+      size: contain
+
+.btn-category.click
+  background: #e1f5ff
+  color: #459dc9
+  &:before
+    width: 10px
+    height: 10px
+    background: url("../img/close.svg") no-repeat center
+      size: contain
 
 .list-statistic
   display: flex
@@ -369,10 +379,104 @@ header
 .menu-category-wrapper
   position: fixed
   width: 100%
-  z-index: 2
+  z-index: 5
   background: #fff
-  top: 75px
+  top: 0
+  box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.1)
+  padding: 100px 0 44px
+  display: none
+  .container
+    align-items: stretch
+    flex-wrap: wrap
 
+.menu-category
+  position: relative
+  width: 100%
+
+.menu-category__item
+  max-width: 300px
+  width: 100%
+
+
+.menu-category__links
+  display: flex
+  align-items: center
+  color: #000000
+  font-size: 15px
+  padding: 12px 14px 11px
+  border-radius: 10px 0 0 10px
+  width: 100%
+  &:hover
+    color: #000000
+    background: #f3f7f9
+
+.menu-category__icon
+  margin: 0 12px 0 0
+  width: 27px
+  height: 27px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.menu-category__item.active
+  background: #f3f7f9
+  border-radius: 10px 0 0 10px
+  .submenu-category
+    opacity: 1
+    visibility: visible
+
+.submenu-category
+  width: calc(100% - 300px)
+  border-radius: 0 10px 10px 10px
+  position: absolute
+  top: 0
+  right: 0
+  height: 100%
+  padding: 30px 59px 30px 30px
+  background: #f3f7f9
+  visibility: hidden
+  opacity: 0
+
+.submenu-category__item
+  margin: 0 0 11px
+  &:last-child
+    margin: 0
+
+.submenu-category__item.active
+  .submenu-category__links
+    color: #6597f3
+  .submenu-category-level2
+    display: flex
+
+
+.submenu-category__links
+  font-size: 15px
+  color: #000000
+  &:hover
+    color: #6597f3
+
+.submenu-category-level2
+  height: 100%
+  position: absolute
+  right: 0
+  top: 0
+  padding: 30px
+  justify-content: space-between
+  align-items: flex-start
+  width: calc(100% - 300px)
+  background: #e3eaee
+  border-radius: 0 10px 10px 0
+  z-index: 1
+  display: none
+
+.submenu-category__level2-list-links
+  color: #6597f3
+  font-size: 15px
+
+.submenu-category__level2-list-item
+  margin: 0 0 11px
+  &:last-child
+    margin: 0
 
 //main
 main
@@ -1121,8 +1225,18 @@ footer
   background: #fff
   height: 100%
   width: 300px
-  overflow: hidden
-
+  //overflow: hidden
+  .box-location
+    margin: 34px 0
+    flex-wrap: wrap
+    position: relative
+    padding: 0 0 0 27px
+    .icon
+      position: absolute
+      left: 0
+      top: 0
+    a
+      margin: 0
   .menu
     margin: 50px 0 36px
 
@@ -1144,7 +1258,86 @@ footer
     height: auto
     padding: 11px 0
     font-size: 18px
+  .menu-category
+    position: inherit
+  .menu-category__item
+    max-width: none
+    width: 100%
+  .menu-category__links
+    padding: 15px 0
 
+  .submenu-category
+    width: 300px
+    right: auto
+    left: 100%
+  .menu-category__item.active
+    background: transparent
+    border-radius: 0
+  .menu-category__links
+    border-radius: 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translate(0,-50%)
+      right: -10px
+      width: 4px
+      height: 7px
+      background: url("../img/arrow-right-grey.svg") no-repeat center
+        size: contain
+    &:hover
+      background: transparent
+  .submenu-category
+    border-radius: 0
+    box-shadow: inset 16px 0 27px 0 rgba(127, 155, 169, 0.1)
+    background-color: #f3f7f9
+    padding: 0 14px 88px 20px
+    opacity: 1
+    visibility: visible
+    display: none
+  .submenu-category-list
+    overflow-y: auto
+    height: 100%
+  .submenu-category-level2
+    position: relative
+    width: 100%
+    background: transparent
+    border-radius: 0
+    opacity: 1
+    visibility: visible
+    display: none
+    padding: 20px
+  .submenu-category__level2-list-links
+    font-size: 14px
+    color: #7d8c92
+  .submenu-category__links
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 4px
+      height: 7px
+      transition: .3s ease
+      background: url("../img/arrow-right-grey.svg") no-repeat center
+        size: contain
+      transform: rotate(90deg) translate(0,-50%)
+      right: 10px
+      top: 40%
+  .submenu-category__item.click
+    .submenu-category__links
+      &:before
+        background: url("../img/arrow-right.svg") no-repeat center
+          size: contain
+        transform: rotate(90deg) translate(0,-50%)
+
+
+.submenu-category__top
+  width: 100%
+  padding: 14px 0 30px
+  display: flex
+  align-items: center
+  justify-content: flex-end
 
 .btn-close
   width: 19px
@@ -1153,6 +1346,28 @@ footer
   align-items: center
   justify-content: center
   cursor: pointer
+
+.box-section-menu
+  margin: 30px 0
+  border-radius: 6px
+  background-color: #f3f7f9
+  width: 100%
+  padding: 30px 21px
+
+.box-section-menu__links
+  display: flex
+  align-items: center
+  color: #000000
+  font-size: 15px
+  margin: 0 0 30px
+  &:last-child
+    margin: 0
+  .icon
+    width: 17px
+    height: 16px
+    margin: 0 11px 0 0
+    min-width: 17px
+
 
 .mobile-menu__top
   width: 100%
@@ -1168,11 +1383,10 @@ footer
   display: flex
   flex-direction: column
   align-items: flex-start
-  width: calc(100% - 20px)
+  width: calc(100% - 10px)
   padding: 26px 20px
   height: 100%
   overflow-y: auto
-  position: relative
   z-index: 1
 
   &::-webkit-scrollbar
@@ -1181,19 +1395,19 @@ footer
     border-radius: 4px
 
   &::-webkit-scrollbar-track
-    background-color: #fff
+    background-color: #dae4e9
 
   &::-webkit-scrollbar-track-piece
-    background-color: #529fba
+    background-color: #fff
 
   &::-webkit-scrollbar-thumb
-    background-color: #fff
+    background-color: #dae4e9
 
   &::-webkit-scrollbar-corner
-    background-color: #529fba
+    background-color: #fff
 
   &::-webkit-resizer
-    background-color: #fff
+    background-color: #dae4e9
 
 .btn-services
   display: none
@@ -1288,12 +1502,34 @@ footer
     max-width: 186px
     margin: 0 23px 0 0
 
-  .city
-    margin: 0
-
   .cabinet-links
     font-weight: normal
 
+.header-click
+  box-shadow: none
+
+.search-mobile
+  align-items: center
+  display: none
+  width: 100px
+  label
+    margin: 0
+  input
+    font-size: 15px
+    color: #000
+    font-family: $default-font
+    &::placeholder
+      color: #000
+  button
+    min-width: 17px
+    width: 17px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 12px 0 0
+    background: transparent
+    padding: 0
 
 //section-specialists-promo
 .section-specialists-promo
