@@ -658,6 +658,7 @@ main
   max-width: 270px
   padding: 17px 20px
   height: 191px
+  color: #000
 
 .box-card__photo
   width: 63px
@@ -722,6 +723,7 @@ main
 
   .links-accent
     display: inline-block
+    color: #6597f3
 
   span
     color: #7d8c92
@@ -1121,7 +1123,7 @@ footer
   top: 13px
   width: 148px
   height: 48px
-  background: url("../img/sale-bg.png") no-repeat center
+  background: url("../img/sale-bg.svg") no-repeat center
     size: contain
   padding: 9px 10px 8px 13px
   font-size: 13.5px
@@ -1135,7 +1137,7 @@ footer
   justify-content: space-between
 
 .name-salon
-  color: #529fba
+  color: #6597f3
   font-size: 16.5px
   font-weight: 500
 
@@ -1432,7 +1434,7 @@ footer
   align-items: center
   justify-content: center
   text-align: center
-  color: #4e646d
+  color: #000000
   font-size: 12px
 
   .icon
@@ -1537,6 +1539,7 @@ footer
 
   h2
     margin: 0
+    text-align: center
 
 .section-specialists-promo__slider
   width: 100%
@@ -1614,10 +1617,12 @@ footer
     max-width: 321px
     margin: 20px 20px 30px 0
 
-.title-page
-  color: #4e646d
-  font-size: 25px
-  font-weight: 500
+
+.page-wrapper-catalog
+  h1
+    font-size: 25px
+    font-weight: 500
+    margin: 0
 
 
 .breadcrumbs
@@ -1625,7 +1630,7 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
-  margin: 0 0 69px
+  margin: 0 0 23px
 
   li
     a
@@ -1650,7 +1655,6 @@ footer
   flex-direction: row
   align-items: center
   justify-content: flex-start
-  color: #4e646d
   font-size: 14px
   font-family: $default-font
 
@@ -1681,7 +1685,7 @@ footer
       transform: translate(-50%, -50%)
       width: 100%
       height: 100%
-      background: #529fba url("../img/check.png") no-repeat center
+      background: #6597f3 url("../img/check.png") no-repeat center
         size: 11px
 
 .filter-box
@@ -1789,23 +1793,39 @@ footer
   li
     &:first-child
       margin: 0 10px 0 0
+      a
+        padding: 0
+        width: 8px
+        height: 11px
+        transform: scale(-1,1)
+        img
+          width: 100%
+          height: auto
+          max-height: 100%
 
     &:last-child
       margin: 0 0 0 10px
-
+      a
+        padding: 0
+        width: 8px
+        height: 11px
+        img
+          width: 100%
+          height: auto
+          max-height: 100%
     a
       padding: 5px 10px
       display: flex
       align-items: center
       justify-content: center
-      color: #4e646d
+      color: #000
       font-size: 16px
       font-weight: 500
       border-radius: 3px
 
     .active
-      color: #fff
-      background: #a6c133
+      color: #608647
+      background: #c7f7a7
 
 .specialist-line__wrap
   width: 100%
@@ -1837,6 +1857,19 @@ footer
   .list-characteristics-specialist, .box-experience .links-accent
     font-size: 14px
 
+.btn-load
+  margin: 0 auto
+
+.btn-grey
+  background: #dae4e9
+  max-width: 269px
+  color: #7d8c92
+  font-size: 18px
+  border: 1px solid transparent
+  &:hover
+    background: transparent
+    border-color: #dae4e9
+
 
 .status-professional
   margin: 0 auto 0 13px
@@ -1854,7 +1887,10 @@ footer
   background: #f4d9ff
 
 .bg-red
-  background: #f13737
+  background: #ffd0cc
+
+.status-professional.bg-red
+  color: #ea5247
 
 .specialist-line__wrap-top
   padding: 20px 20px 18px
@@ -1881,11 +1917,12 @@ footer
     font-weight: 500
 
 .btn-diploma
-  border: solid 1px #529fba
   font-size: 13px
-  color: #529fba
-
+  border-color: #ffc0e4
+  color: #c54990
+  background: #ffc0e4
   .text
+    color: #c54990
     &:after
       content: ''
       transition: .3s ease
@@ -1893,25 +1930,20 @@ footer
       width: 9px
       height: 5px
       margin: 0 0 0 4px
-      background: url("../img/arrow-bottom-blue.png") no-repeat center
+      background: url("../img/arrow-bottom-pink.svg") no-repeat center
         size: contain
-
   &:hover
     background: transparent
-    border-color: #7d8c92
-    color: #7d8c92
-
-  &:focus
-    color: #7d8c92
+    color: #c54990
 
 .click-btn
-  border-color: #7d8c92
-  color: #7d8c92
-
+  color: #c54990
+  background: transparent
+  border-color: #ffc0e4
   .text
+    color: #c54990
     &:after
-      background: url("../img/arrow-top-grey.png") no-repeat center
-        size: contain
+      transform: rotate(180deg)
 
 .specialist-line__wrap-left
   width: 150px
@@ -2126,7 +2158,7 @@ footer
     color: #7d8c92
     font-size: 12px
 
-    h3
+    p
       color: #4e646d
       font-size: 14px
       font-weight: 500
@@ -2770,7 +2802,6 @@ footer
   display: flex
   align-items: center
   justify-content: space-between
-  color: #4e646d
   font-weight: 500
   font-size: 16px
   font-family: $default-font
@@ -2782,13 +2813,13 @@ footer
 .ui-state-hover .ui-icon, .ui-button:hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:focus .ui-icon
   width: 9px
   height: 5px
-  background: url("../img/arrow-bottom2.png") no-repeat center
+  background: url("../img/arrow-bottom2.svg") no-repeat center
     size: contain
 
 .ui-selectmenu-button-open .ui-icon
   width: 9px
   height: 5px
-  background: url("../img/arrow-bottom2.png") no-repeat center
+  background: url("../img/arrow-bottom2.svg") no-repeat center
     size: contain
   transform: rotate(180deg)
 
@@ -2799,7 +2830,7 @@ footer
 .ui-button .ui-icon
   width: 9px
   height: 5px
-  background: url("../img/arrow-bottom2.png") no-repeat center
+  background: url("../img/arrow-bottom2.svg") no-repeat center
     size: contain
   order: 1
 
@@ -2827,26 +2858,25 @@ footer
       border-radius: 4px
 
     &::-webkit-scrollbar-track
-      background-color: #529fba
+      background-color: #7d8c92
 
     &::-webkit-scrollbar-track-piece
-      background-color: #dce5ea
+      background-color: #dae4e9
 
     &::-webkit-scrollbar-thumb
-      background-color: #529fba
+      background-color: #7d8c92
 
     &::-webkit-scrollbar-corner
-      background-color: #dce5ea
+      background-color: #dae4e9
 
     &::-webkit-resizer
-      background-color: #529fba
+      background-color: #7d8c92
 
 
 .ui-menu
   .ui-menu-item-wrapper
     padding: 0
     border: none
-    color: #4e646d
     font-size: 14px
 
     &:hover
