@@ -457,3 +457,14 @@ $('.btn-category').click(function () {
     $('.header').toggleClass('header-click');
     $('.menu-category-wrapper').fadeToggle();
 });
+
+$(document).mouseup(function (e) { // событие клика по веб-документу
+    var div = $(".menu-category-wrapper"); // тут указываем ID элемента
+    var btn = $('.btn-category');
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && !btn.is(e.target) && btn.has(e.target).length === 0
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.fadeOut(); // скрываем его
+        btn.removeClass('click');
+    }
+});

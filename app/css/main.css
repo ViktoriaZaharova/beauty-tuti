@@ -2404,23 +2404,21 @@ footer {
 .about-company__info {
   padding: 0 0 0 30px;
   width: calc(100% - 340px); }
-  .about-company__info .name {
-    width: auto;
-    margin: 0; }
   .about-company__info h1 {
-    width: 100%;
+    width: auto;
     font-size: 24.5px;
     font-weight: 500;
-    color: #010101;
-    margin: 0 0 20px; }
+    color: #010101; }
   .about-company__info .list-characteristics-specialist {
     font-size: 16px; }
     .about-company__info .list-characteristics-specialist li {
       margin: 0 0 25px; }
-  .about-company__info .list-rating li {
-    margin: 0 0 20px; }
-    .about-company__info .list-rating li:last-child {
+  .about-company__info .list-rating {
+    margin: 9px 0 0; }
+    .about-company__info .list-rating li {
       margin: 0 0 20px; }
+      .about-company__info .list-rating li:last-child {
+        margin: 0 0 20px; }
 
 .btn-express {
   max-width: 222px; }
@@ -2855,9 +2853,6 @@ footer {
 .about-masters .phone-wrapper {
   margin: 0 0 20px;
   color: #7d8c92; }
-
-.about-masters .line-title {
-  margin: 0 0 9px; }
 
 .about-company__bottom {
   width: 100%;
