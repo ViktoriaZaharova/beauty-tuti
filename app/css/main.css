@@ -222,7 +222,7 @@ h1 {
   h1 .city {
     color: #c4f0ff; }
 
-h2 {
+h2, .section-title {
   font-size: 25px;
   font-weight: 500;
   width: 100%;
@@ -1718,7 +1718,7 @@ footer {
 
 .section-specialists-promo {
   padding: 51px 0 20px; }
-  .section-specialists-promo h2 {
+  .section-specialists-promo .section-title {
     margin: 0;
     text-align: center; }
 
@@ -2303,7 +2303,7 @@ footer {
 
 .gallery, .document, .specialist-company, .services-company, .education {
   padding: 0 30px; }
-  .gallery h2, .gallery h3, .document h2, .document h3, .specialist-company h2, .specialist-company h3, .services-company h2, .services-company h3, .education h2, .education h3 {
+  .gallery h2, .gallery h3, .gallery .section-title, .document h2, .document h3, .document .section-title, .specialist-company h2, .specialist-company h3, .specialist-company .section-title, .services-company h2, .services-company h3, .services-company .section-title, .education h2, .education h3, .education .section-title {
     font-size: 20px;
     margin: 0 0 20px;
     font-weight: 500; }
@@ -3009,10 +3009,11 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 0 24px; }
-  .modal__wrapper-head h2 {
+  .modal__wrapper-head .modal__wrapper-head-title {
     font-size: 20px;
     font-weight: 500;
-    margin: 0; }
+    margin: 0;
+    width: 100%; }
 
 .modal__wrapper-body {
   display: -webkit-box;
@@ -3046,10 +3047,11 @@ footer {
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
-  .modal__wrapper-body h3 {
-    margin: 18px auto 28px;
+  .modal__wrapper-body .name {
+    margin: 18px auto 15px;
     font-weight: 500;
-    font-size: 17.5px; }
+    font-size: 17.5px;
+    color: #000; }
   .modal__wrapper-body .list-message {
     margin: 12px 0 26px; }
     .modal__wrapper-body .list-message li {
@@ -4085,7 +4087,7 @@ footer {
     padding: 48px 0 43px; }
   h1 {
     font-size: 23px; }
-  h2 {
+  h2, .section-title {
     font-size: 22px;
     line-height: normal; }
   .description-title {
