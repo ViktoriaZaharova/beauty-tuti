@@ -151,6 +151,15 @@ button {
     border-color: #d859a2;
     color: #d859a2; }
 
+.btn-light-accent {
+  background: #ffc0e4;
+  border: 1px solid transparent;
+  color: #c54990; }
+  .btn-light-accent:hover {
+    border-color: #ffc0e4;
+    background: transparent;
+    color: #c54990; }
+
 .btn-blue {
   background: #6597f3;
   border-radius: 3px;
@@ -214,6 +223,9 @@ button {
 .links-accent {
   color: #6597f3; }
 
+.bg-orange-dark {
+  background: #fcb328; }
+
 h1 {
   width: 100%;
   font-size: 35px;
@@ -236,10 +248,14 @@ h2, .section-title {
   font-size: 22px; }
 
 header {
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  z-index: 6; }
 
 .header-top {
-  padding: 9px 0; }
+  padding: 14px 0; }
+  .header-top .cabinet-links {
+    display: none; }
   .header-top .container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -250,6 +266,18 @@ header {
 
 .btn-place {
   margin: 0 30px; }
+
+.box-section-menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .box-section-menu__header .box-section-menu__links {
+    margin: 0 64px 0 0; }
 
 .cabinet-links {
   display: -webkit-box;
@@ -273,6 +301,16 @@ header {
     border-color: #dae4e9;
     color: #529fba; }
 
+.cabinet-links-grey {
+  background: #dae4e9;
+  padding: 16px 19px;
+  border-radius: 6px;
+  color: #7d8c92;
+  font-size: 15px;
+  max-width: 82px;
+  width: 100%;
+  border: 1px solid transparent; }
+
 .box-location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,8 +318,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #7d8c92;
-  margin: 0 auto 0 29px; }
+  color: #7d8c92; }
   .box-location .icon {
     width: 14px;
     height: 18px;
@@ -369,7 +406,7 @@ header {
     background-size: contain; }
 
 .header-bottom {
-  padding: 45px 0; }
+  padding: 25px 0; }
   .header-bottom .container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -379,10 +416,12 @@ header {
             align-items: center; }
   .header-bottom .btn-sale {
     margin: 0 30px 0 0; }
+  .header-bottom .box-location {
+    margin: 0 auto 0 29px; }
 
 .logo {
   width: 100%;
-  max-width: 350px;
+  max-width: 186px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,6 +455,45 @@ header {
       .menu li a:hover {
         color: #000; }
 
+.form-search {
+  max-width: 340px;
+  width: 100%;
+  position: relative;
+  border-radius: 6px;
+  background-color: #f3f7f9;
+  overflow: hidden; }
+  .form-search input {
+    width: 100%;
+    padding: 0 50px 0 56px;
+    background: transparent;
+    height: 46px; }
+  .form-search label {
+    position: relative; }
+    .form-search label .icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+  .form-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #dae4e9;
+    width: 83px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #7d8c92;
+    font-size: 15px; }
+
 .menu-category-wrapper {
   position: fixed;
   width: 100%;
@@ -424,7 +502,7 @@ header {
   top: 0;
   -webkit-box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.1);
           box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.1);
-  padding: 100px 0 44px;
+  padding: 140px 0 44px;
   display: none; }
   .menu-category-wrapper .container {
     -webkit-box-align: stretch;
@@ -538,24 +616,32 @@ header {
 
 main {
   position: relative;
-  padding: 42px 0; }
-  main:before, main:after {
-    content: '';
-    background: url("../img/figure-circle.png") no-repeat center;
-      background-size: contain;
-    position: absolute; }
-  main:before {
-    width: 621px;
-    height: 621px;
-    bottom: -420px;
-    left: -187px; }
-  main:after {
-    width: 1093px;
-    height: 1093px;
-    bottom: -170px;
-    right: -331px; }
-  main h1 {
-    text-align: center; }
+  padding: 50px 0; }
+
+.main:before, .main:after {
+  content: '';
+  background: url("../img/figure-circle.png") no-repeat center;
+    background-size: contain;
+  position: absolute; }
+
+.main:before {
+  width: 621px;
+  height: 621px;
+  bottom: -420px;
+  left: -187px; }
+
+.main:after {
+  width: 1093px;
+  height: 1093px;
+  bottom: -170px;
+  right: -331px; }
+
+.main h1 {
+  text-align: center;
+  margin: 0 auto 30px; }
+
+.main-services-category__slider {
+  width: 100%; }
 
 .category-services {
   width: 100%;
@@ -967,7 +1053,8 @@ main {
   padding: 20px;
   margin: 35px 20px 35px 0;
   -webkit-transition: .3s ease;
-  transition: .3s ease; }
+  transition: .3s ease;
+  color: #000; }
   .interview-box:hover {
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px); }
@@ -996,7 +1083,6 @@ main {
   width: calc(100% - 150px);
   padding: 0 0 0 20px; }
   .interview-box__right .text {
-    color: #4e646d;
     font-size: 14px; }
     .interview-box__right .text p {
       display: inline; }
@@ -1010,7 +1096,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%; }
+  width: 100%;
+  color: #7d8c92; }
   .list-statistic__specialist li {
     margin: 0; }
 
@@ -1670,7 +1757,6 @@ footer {
   .header .header-bottom {
     padding: 12px 0 11px; }
   .header .logo {
-    max-width: 186px;
     margin: 0 23px 0 0; }
   .header .cabinet-links {
     font-weight: normal; }
@@ -3209,8 +3295,12 @@ footer {
     max-width: 340px; }
   .salons-new {
     width: calc(100% - 340px); }
-  .box-location, .btn-place {
-    margin: 0 auto; } }
+  .btn-place {
+    margin: 0; }
+  .header-bottom .box-location {
+    margin: 0; }
+  .form-search {
+    max-width: 300px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1160px) {

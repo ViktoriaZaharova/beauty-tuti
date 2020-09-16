@@ -142,6 +142,15 @@ button
     border-color: #d859a2
     color: #d859a2
 
+.btn-light-accent
+  background: #ffc0e4
+  border: 1px solid transparent
+  color: #c54990
+  &:hover
+    border-color: #ffc0e4
+    background: transparent
+    color: #c54990
+
 .btn-blue
   background: #6597f3
   border-radius: 3px
@@ -207,6 +216,9 @@ button
 .links-accent
   color: #6597f3
 
+.bg-orange-dark
+  background: #fcb328
+
 h1
   width: 100%
   font-size: 35px
@@ -233,16 +245,28 @@ h2, .section-title
 //header
 header
   background: #fff
+  position: relative
+  z-index: 6
 
 .header-top
-  padding: 9px 0
+  padding: 14px 0
+  .cabinet-links
+    display: none
 
   .container
     justify-content: space-between
     align-items: center
 
+
 .btn-place
   margin: 0 30px
+
+.box-section-menu__header
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .box-section-menu__links
+    margin: 0 64px 0 0
 
 .cabinet-links
   display: flex
@@ -262,11 +286,21 @@ header
     border-color: #dae4e9
     color: #529fba
 
+.cabinet-links-grey
+  background: #dae4e9
+  padding: 16px 19px
+  border-radius: 6px
+  color: #7d8c92
+  font-size: 15px
+  max-width: 82px
+  width: 100%
+  border: 1px solid transparent
+
 .box-location
   display: flex
   align-items: center
   color: #7d8c92
-  margin: 0 auto 0 29px
+
 
   .icon
     width: 14px
@@ -338,7 +372,7 @@ header
 
 //header-bottom
 .header-bottom
-  padding: 45px 0
+  padding: 25px 0
 
   .container
     justify-content: space-between
@@ -346,10 +380,12 @@ header
 
   .btn-sale
     margin: 0 30px 0 0
+  .box-location
+    margin: 0 auto 0 29px
 
 .logo
   width: 100%
-  max-width: 350px
+  max-width: 186px
   display: flex
   align-items: center
   justify-content: center
@@ -376,6 +412,40 @@ header
       &:hover
         color: #000
 
+.form-search
+  max-width: 340px
+  width: 100%
+  position: relative
+  border-radius: 6px
+  background-color: #f3f7f9
+  overflow: hidden
+  input
+    width: 100%
+    padding: 0 50px 0 56px
+    background: transparent
+    height: 46px
+  label
+    position: relative
+    .icon
+      position: absolute
+      left: 20px
+      top: 50%
+      transform: translate(0,-50%)
+  button
+    position: absolute
+    top: 0
+    right: 0
+    background-color: #dae4e9
+    width: 83px
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #7d8c92
+    font-size: 15px
+
+
+
 .menu-category-wrapper
   position: fixed
   width: 100%
@@ -383,7 +453,7 @@ header
   background: #fff
   top: 0
   box-shadow: 0 10px 30px 0 rgba(116, 142, 155, 0.1)
-  padding: 100px 0 44px
+  padding: 140px 0 44px
   display: none
   .container
     align-items: stretch
@@ -481,8 +551,9 @@ header
 //main
 main
   position: relative
-  padding: 42px 0
+  padding: 50px 0
 
+.main
   &:before, &:after
     content: ''
     background: url("../img/figure-circle.png") no-repeat center
@@ -503,6 +574,11 @@ main
 
   h1
     text-align: center
+    margin: 0 auto 30px
+
+.main-services-category__slider
+  width: 100%
+
 
 .category-services
   width: 100%
@@ -740,6 +816,7 @@ main
       width: 17px
       height: 17px
 
+
 .specialist-card-max
   max-width: none
   height: 412px
@@ -846,6 +923,7 @@ main
   padding: 20px
   margin: 35px 20px 35px 0
   transition: .3s ease
+  color: #000
 
   &:hover
     transform: translateY(-6px)
@@ -869,7 +947,6 @@ main
   padding: 0 0 0 20px
 
   .text
-    color: #4e646d
     font-size: 14px
 
     p
@@ -882,7 +959,7 @@ main
   display: flex
   align-items: center
   width: 100%
-
+  color: #7d8c92
   li
     margin: 0
 
@@ -1493,7 +1570,6 @@ footer
   left: 0
   top: 0
   width: 100%
-
   .header-top
     display: none
 
@@ -1501,11 +1577,11 @@ footer
     padding: 12px 0 11px
 
   .logo
-    max-width: 186px
     margin: 0 23px 0 0
 
   .cabinet-links
     font-weight: normal
+
 
 .header-click
   box-shadow: none
