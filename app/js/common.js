@@ -3,20 +3,17 @@ $('.load-more').on('click', function (e) {
 
     var
         $this = $(this),
-        content = $(this).parent().find('ul li:hidden');
+        content = $(this).parents('.category-services').find('.category-services-body');
 
 
     if (!$this.hasClass('trigger')) {
-        $this.addClass('trigger');
-
-        content.slideDown();
+        $this.addClass('trigger').html('Свернуть');
+        content.addClass('open');
     } else {
-        $this.removeClass('trigger');
-
-        $('.list-category').each(function () {
-            $(this).find('li').slice(12).slideUp();
-        });
+        $this.removeClass('trigger').html('Показать все');
+        content.removeClass('open');
     }
+
 });
 
 $('.load-more__links').on('click', function (e) {

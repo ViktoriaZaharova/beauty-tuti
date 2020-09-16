@@ -560,23 +560,7 @@ main
     margin: 0 auto 30px
 
 .main
-  &:before, &:after
-    content: ''
-    background: url("../img/figure-circle.png") no-repeat center
-      size: contain
-    position: absolute
 
-  &:before
-    width: 621px
-    height: 621px
-    bottom: -420px
-    left: -187px
-
-  &:after
-    width: 1093px
-    height: 1093px
-    bottom: -170px
-    right: -331px
 
 .bg-turquoise
   background: #60bdbc
@@ -715,39 +699,83 @@ main
 .main-services-category__tablet, .main-services-category__mobile
   display: none
 
+
+
 .category-services
   width: 100%
   display: flex
   align-items: flex-start
   justify-content: space-between
   flex-wrap: wrap
-  padding: 37px 54px 40px
-  border: solid 1px #76b8cf
-    radius: 6px
+  border-radius: 10px
+  box-shadow: 0px 10px 30px 0 rgba(116, 142, 155, 0.2)
+  background-color: #ffffff
 
-  .links
-    margin: 24px auto 0
+
+.category-services-footer
+  width: 100%
+  padding: 26px 0
+  border-top: 1px solid #e3ebef
+  .load-more
+    font-size: 18.5px
+    font-weight: 500
+
+.category-services-body
+  padding: 41px 49px
+  max-height: 540px
+  overflow-y: hidden
+  position: relative
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 54px
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+
+.category-services-body.open
+  max-height: none
+  &:before
+    display: none
+
+.category-services__box
+  width: 49%
+  margin: 0 0 25px
+
+.category-services__box-title
+  width: 100%
+  margin: 0 0 20px
+  color: #6597f3
+  font-size: 20.5px
 
 .list-category
   width: 100%
   display: flex
   align-items: flex-start
-  justify-content: space-between
+  justify-content: flex-start
   flex-wrap: wrap
 
   li
-    width: 25%
     margin: 0 0 15px
-    display: none
-
-    &:nth-child(-n+12)
-      display: block
-
     a
-      color: #fff
+      color: #7d8c92
+      font-size: 14px
+      &:after
+        content: ''
+        display: inline-block
+        margin: 0 7px 0 6px
+        border-radius: 50%
+        width: 6px
+        height: 6px
+        background-color: #ffc0e4
 
-      &:hover
-        color: #4e646d
+
+
 
 .links
   display: flex
@@ -756,24 +784,10 @@ main
   text-align: center
   color: #fff
 
-  &:hover
-    color: #a6c133
-
 .load-more
-  .icon
-    display: flex
-    align-items: center
-    justify-content: center
-    width: 21px
-    height: 21px
-    background: #a6c133
-    border-radius: 50%
-    margin: 0 12px 0 0
-    transition: .3s ease
+  color: #6597f3
 
-.load-more.trigger
-  .icon
-    transform: rotate(180deg)
+
 
 //banner
 .banner
@@ -3118,6 +3132,9 @@ footer
 
     &:nth-child(-n+8)
       display: flex
+
+.pb-0
+  padding-bottom: 0
 
 
 @import "media"
