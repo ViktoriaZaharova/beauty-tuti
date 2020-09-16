@@ -178,6 +178,16 @@
   .wrapper
     padding: 147px 0 0
 
+  .box-section-menu__header, .form-search, .header-bottom .cabinet-links
+    display: none
+
+  .header-top .cabinet-links
+    display: flex
+
+  header
+    .header-bottom
+      padding-top: 0
+
 @media only screen and (max-width : 1040px)
   .reviews-general__right
     max-width: none
@@ -188,7 +198,7 @@
 
 @media only screen and (max-width : 992px)
   main
-    padding: 41px 0 51px
+    padding: 41px 0 0
 
   .banner-wrap
     flex-direction: column
@@ -237,6 +247,14 @@
     .list
       li
         text-align: right
+
+  .main-services-category__box
+    width: 250px
+
+  .max-box
+    width: 530px
+
+
 
 @media only screen and (max-width : 900px)
   .category-services
@@ -297,6 +315,31 @@
 
   .about-masters .about-company__info .list-rating li, .about-masters .about-company__info .list-characteristics-specialist li
     margin: 0 0 7px
+
+@media only screen and (max-width : 840px)
+  .main-services-category__slider
+    display: none
+
+  .main-services-category__tablet
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .main-services-category__col
+    margin: 0
+    width: 49%
+
+  .main-services-category__box
+    width: 100%
+    margin: 0 0 20px
+
+  .max-box, .center-box
+    height: 268px
+
+  .main-services-category__box6 .main-services-category__box-img
+    max-width: 300px
+    right: -110px
 
 @media only screen and (max-width : 800px)
   .private-masters-card
@@ -435,8 +478,6 @@
     max-width: 268px
     height: 37px
 
-  .logo
-    max-width: 321px
 
   .private-masters-card
     height: 319px
@@ -571,6 +612,74 @@
   .massage-salons-card
     height: auto
 
+  .search-mobile
+    margin: 0
+
+  .main-services-category__tablet
+    display: none
+
+  .main-services-category__mobile
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 100%
+
+    align-items: stretch
+
+  .main-services-category__box
+    width: 49%
+    height: auto
+    padding: 0
+    margin: 0 0 39px
+
+  .main-services-category__box-icon
+    width: 100%
+    height: 124px
+    border-radius: 10px
+    overflow: hidden
+    position: relative
+
+  .main-services-category__box-title
+    text-align: center
+    width: 100%
+    margin: 10px auto 0
+    color: #000000
+    font-size: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: none
+    font-weight: normal
+
+  .main-services-category__box2 .main-services-category__box-img
+    max-width: none
+    width: 100%
+    height: 100%
+    right: 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .bg-decor
+    top: 29px
+    left: 0
+
+  .main-services-category__box4 .bg-decor
+    top: 29px
+
+  .main-services-category__box4 .main-services-category__box-img
+    right: -20px
+    top: 0
+    max-width: 127px
+
+  .main-services-category__box6
+    .main-services-category__box-img
+      max-width: 140px
+      right: -30px
+
+  .main-services-category__box5 .main-services-category__box-img
+    max-width: 145px
 
 @media only screen and (max-width : 630px)
 
@@ -648,7 +757,7 @@
     padding: 5px 0 22px
 
   .header-bottom
-    padding: 22px 0
+    padding: 5px 0 22px
     .container
       align-items: flex-start
     .btn
@@ -674,7 +783,7 @@
   .logo
     order: 1
 
-  .header .logo
+  header .logo, .header .logo
     margin: 22px 0 0
     max-width: 50%
     justify-content: flex-start
@@ -722,6 +831,9 @@
     display: block
     .slide
       width: auto
+
+  .main-services-category__slider
+    display: none
 
   .specialists-new__wrapper
     .slick-list
@@ -1008,7 +1120,7 @@
     display: none
 
   main
-    padding: 48px 0 43px
+    padding: 48px 0 0
 
   h1
     font-size: 23px
@@ -1088,8 +1200,10 @@
       width: 17px
       height: 17px
 
-  .header .logo
+  .logo
     max-width: 175px
+    img
+      width: 100%
 
 
 /* Custom, iPhone Retina */

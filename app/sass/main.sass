@@ -219,6 +219,9 @@ button
 .bg-orange-dark
   background: #fcb328
 
+.bg-blue-dark
+  background: #6597f3
+
 h1
   width: 100%
   font-size: 35px
@@ -551,7 +554,10 @@ header
 //main
 main
   position: relative
-  padding: 50px 0
+  padding: 50px 0 0
+  h1
+    text-align: center
+    margin: 0 auto 30px
 
 .main
   &:before, &:after
@@ -572,13 +578,142 @@ main
     bottom: -170px
     right: -331px
 
-  h1
-    text-align: center
-    margin: 0 auto 30px
+.bg-turquoise
+  background: #60bdbc
+
+.bg-pink
+  background: #d859a2
+
+.bg-mustard
+  background: #c4b830
+
+.bg-red-dark
+  background: #f36f65
+
+.bg-green
+  background: #9fce4e
+
+.bg-violet
+  background: #b359d8
 
 .main-services-category__slider
   width: 100%
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: -68px
+    top: 50%
+    transform: translate(0,-50%)
+    width: 91px
+    height: 511px
+    background: url("../img/shadow-slider.png") no-repeat center
+      size: contain
+    z-index: 1
 
+.main-services-category__box
+  border-radius: 10px
+  width: 270px
+  height: 124px
+  margin: 0 0 30px
+  position: relative
+  overflow: hidden
+  color: #fff
+  font-size: 18px
+  font-weight: 500
+  padding: 25px 30px
+  &:last-child
+    margin: 0
+  &:hover
+    color: #fff
+
+.center-box
+  height: 278px
+
+.max-box
+  width: 570px
+  height: 278px
+
+.main-services-category__box-img
+  position: absolute
+  right: 0
+  z-index: 1
+  top: 0
+  max-width: 190px
+  width: 100%
+
+.main-services-category__box-title
+  max-width: 125px
+  width: 100%
+  position: relative
+  z-index: 2
+  display: inline-block
+
+.main-services-category__box1
+  .main-services-category__box-img
+    top: 13px
+    right: 20px
+
+.main-services-category__box2
+  .main-services-category__box-img
+    max-width: 196px
+    right: -40px
+
+.main-services-category__box3
+  .main-services-category__box-img
+    max-width: 103px
+    top: auto
+    bottom: -5px
+
+.main-services-category__box4
+  .main-services-category__box-img
+    max-width: 165px
+    top: auto
+    bottom: 0
+  .bg-decor
+    left: -20px
+    right: auto
+    top: 132px
+
+.main-services-category__box5
+  .main-services-category__box-img
+    max-width: 147px
+
+.main-services-category__box6
+  .main-services-category__box-img
+    max-width: 313px
+
+.main-services-category__box7
+  .main-services-category__box-img
+    max-width: 144px
+    right: -40px
+
+.main-services-category__box8
+  .main-services-category__box-img
+    max-width: 173px
+    top: 7px
+
+.bg-decor
+  position: absolute
+  left: 32px
+  top: 89px
+
+.main-services-category__col
+  margin: 0 25px 0 0
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.main-services-category__col-row
+  width: 100%
+  align-items: stretch
+  justify-content: space-between
+  display: flex
+  .main-services-category__box
+    margin: 0
+
+.main-services-category__tablet, .main-services-category__mobile
+  display: none
 
 .category-services
   width: 100%
@@ -1590,6 +1725,7 @@ footer
   align-items: center
   display: none
   width: 100px
+  margin: 0 45px 0 0
   label
     margin: 0
   input

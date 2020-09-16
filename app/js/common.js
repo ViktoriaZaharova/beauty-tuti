@@ -253,6 +253,14 @@ $('.certificate-slider').slick({
     ]
 });
 
+$('.main-services-category__slider').slick({
+    slidesToShow: 3,
+    variableWidth: true,
+    infinite: false,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+});
+
 $('.btn-diploma').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('click-btn').parents('.specialist-line__wrap').find('.specialist-line__wrap-hidden').slideToggle();
