@@ -1180,7 +1180,8 @@ main {
         position: relative;
         z-index: 1;
         background: #f3f7f9;
-        padding: 0 0 0 3px; }
+        padding: 0 0 0 3px;
+        float: right; }
       .box-experience ul li span {
         position: relative;
         z-index: 1;
@@ -4563,4 +4564,6 @@ footer {
       max-width: none;
       width: 100%; }
   .search-mobile {
-    margin: 19px 0 0; } }
+    margin: 19px 0 0; }
+  .services-company .box-experience, .services-company .list-characteristics-specialist {
+    font-size: 11px; } }

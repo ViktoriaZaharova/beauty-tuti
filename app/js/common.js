@@ -20,7 +20,7 @@ $('.load-more').on('click', function (e) {
 
 $('.load-more__links').on('click', function (e) {
     e.preventDefault();
-    $(this).parent().find('.services-list__hidden li:hidden').css('display', 'flex');
+    $(this).parent().find('.services-list__hidden li:hidden').fadeIn();
 
     var onBlock = $('.services-list__hidden li:hidden').length;
     if (onBlock <= 0) {
