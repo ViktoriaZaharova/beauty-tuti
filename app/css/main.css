@@ -624,6 +624,11 @@ main {
     text-align: center;
     margin: 0 auto 30px; }
 
+.main h1 {
+  text-align: left;
+  font-size: 24.5px;
+  margin: 0 0 33px; }
+
 .bg-turquoise {
   background: #60bdbc; }
 
@@ -796,7 +801,7 @@ main {
 
 .category-services-body {
   padding: 41px 49px;
-  max-height: 540px;
+  max-height: 400px;
   overflow-y: hidden;
   position: relative;
   display: -webkit-box;
@@ -861,6 +866,8 @@ main {
         width: 6px;
         height: 6px;
         background-color: #ffc0e4; }
+      .list-category li a:hover {
+        text-decoration: underline; }
 
 .links {
   display: -webkit-box;
@@ -4510,7 +4517,9 @@ footer {
     margin: 0 0 22px; }
   .category-services-body {
     max-height: 999px;
-    padding: 26px 18px; } }
+    padding: 26px 18px; }
+  .main h1 {
+    font-size: 22px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 370px) {

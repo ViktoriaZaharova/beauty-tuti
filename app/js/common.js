@@ -8,11 +8,13 @@ $('.load-more').on('click', function (e) {
 
     if (!$this.hasClass('trigger')) {
         $this.addClass('trigger').html('Свернуть');
-        content.addClass('open');
+        content.addClass('open', 200);
     } else {
         $this.removeClass('trigger').html('Показать все');
-        content.removeClass('open');
+        content.removeClass('open', 200);
     }
+
+
 
 });
 
